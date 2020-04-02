@@ -1,0 +1,85 @@
+// Monstar Template
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/monstar-template
+// License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Gap
+--------------------------------------------------*/
+
+.gap-10 {
+  margin: -5px;
+
+  & > div,
+  & > .gap-item { padding: 5px; }
+}
+.gap-20 {
+  margin: -10px;
+
+  & > div,
+  & > .gap-item { padding: 10px; }
+}
+
+.gap-30 {
+  margin: -15px;
+
+  & > div,
+  & > .gap-item { padding: 15px; }
+}
+
+.gap-40 {
+  margin: -20px;
+
+  & > div,
+  & > .gap-item { padding: 20px; }
+}
+
+.gap-50 {
+  margin: -25px;
+
+  & > div,
+  & > .gap-item { padding: 25px; }
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+    .gap-#{$breakpoint}-10 {
+      margin: -5px;
+
+      & > div,
+      & > .gap-item { padding: 5px; }
+    }
+
+    .gap-#{$breakpoint}-20 {
+      margin: -10px;
+
+      & > div,
+      & > .gap-item { padding: 10px; }
+    }
+
+    .gap-#{$breakpoint}-30 {
+      margin: -15px;
+
+      & > div,
+      & > .gap-item { padding: 15px; }
+    }
+
+    .gap-#{$breakpoint}-40 {
+      margin: -20px;
+
+      & > div,
+      & > .gap-item { padding: 20px; }
+    }
+
+    .gap-#{$breakpoint}-50 {
+      margin: -25px;
+
+      & > div,
+      & > .gap-item { padding: 25px; }
+    }
+  }
+}

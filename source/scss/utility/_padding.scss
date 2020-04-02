@@ -1,0 +1,67 @@
+// Monstar Template
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/monstar-template
+// License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Padding
+--------------------------------------------------*/
+
+.pat-5 { padding-top: 5px; }
+.pat-10 { padding-top: 10px; }
+.pat-20 { padding-top: 20px; }
+.pat-30 { padding-top: 30px; }
+.pat-40 { padding-top: 40px; }
+.pat-50 { padding-top: 50px; }
+.pat-60 { padding-top: 60px; }
+.pat-70 { padding-top: 70px; }
+.pat-80 { padding-top: 80px; }
+.pat-90 { padding-top: 90px; }
+.pat-100 { padding-top: 100px; }
+
+.pab-5 { padding-bottom: 5px; }
+.pab-10 { padding-bottom: 10px; }
+.pab-20 { padding-bottom: 20px; }
+.pab-30 { padding-bottom: 30px; }
+.pab-40 { padding-bottom: 40px; }
+.pab-50 { padding-bottom: 50px; }
+.pab-60 { padding-bottom: 60px; }
+.pab-70 { padding-bottom: 70px; }
+.pab-80 { padding-bottom: 80px; }
+.pab-90 { padding-bottom: 90px; }
+.pab-100 { padding-bottom: 100px; }
+
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+
+    .pat-#{$breakpoint}-0 { padding-top: 0; }
+    .pat-#{$breakpoint}-5 { padding-top: 5px; }
+    .pat-#{$breakpoint}-10 { padding-top: 10px; }
+    .pat-#{$breakpoint}-20 { padding-top: 20px; }
+    .pat-#{$breakpoint}-30 { padding-top: 30px; }
+    .pat-#{$breakpoint}-40 { padding-top: 40px; }
+    .pat-#{$breakpoint}-50 { padding-top: 50px; }
+    .pat-#{$breakpoint}-60 { padding-top: 60px; }
+    .pat-#{$breakpoint}-70 { padding-top: 70px; }
+    .pat-#{$breakpoint}-80 { padding-top: 80px; }
+    .pat-#{$breakpoint}-90 { padding-top: 90px; }
+    .pat-#{$breakpoint}-100 { padding-top: 100px; }
+
+    .pab-#{$breakpoint}-0 { padding-bottom: 0; }
+    .pab-#{$breakpoint}-5 { padding-bottom: 5px; }
+    .pab-#{$breakpoint}-10 { padding-bottom: 10px; }
+    .pab-#{$breakpoint}-20 { padding-bottom: 20px; }
+    .pab-#{$breakpoint}-30 { padding-bottom: 30px; }
+    .pab-#{$breakpoint}-40 { padding-bottom: 40px; }
+    .pab-#{$breakpoint}-50 { padding-bottom: 50px; }
+    .pab-#{$breakpoint}-60 { padding-bottom: 60px; }
+    .pab-#{$breakpoint}-70 { padding-bottom: 70px; }
+    .pab-#{$breakpoint}-80 { padding-bottom: 80px; }
+    .pab-#{$breakpoint}-90 { padding-bottom: 90px; }
+    .pab-#{$breakpoint}-100 { padding-bottom: 100px; }
+  }
+}

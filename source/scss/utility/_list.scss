@@ -1,0 +1,20 @@
+// Monstar Template
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/monstar-template
+// License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  List
+--------------------------------------------------*/
+
+.list {
+  list-style-type: none;
+
+  &.is-disc { list-style-type: disc; }
+  &.is-square { list-style-type: square; }
+  &.is-circle { list-style-type: circle; }
+}

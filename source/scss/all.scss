@@ -1,0 +1,55 @@
+/*!
+ * Theme Name:  Monstar Template
+ * Theme URI:   https://github.com/jackryanoracoy/monstar-template
+ * Author:      JACKRO (Jack Ryan Oracoy)
+ * Author URI:  https://jackryanoracoy.github.io
+ * Email:       jackryanoracoy@gmail.com
+ * Description: A Scalable and Maintainable Base Theme
+ * Version:     1.0.0
+ * License:     The MIT License
+ * License URI: https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+ * Text Domain: monstar_wp_legacy
+ * Tags:        ITCSS, SMACSS, OOCSS, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+ */
+
+ $responsive: true;
+
+ @import 'setting/variable';
+ @import 'setting/mixin';
+ @import 'setting/font-face';
+ @import 'setting/root';
+
+ @import 'base/reset';
+ @import 'base/html';
+ @import 'base/focus';
+ @import 'base/body';
+ @import 'base/normalize';
+ @import 'base/link';
+ @import 'base/typography';
+
+ @import 'layout/container';
+ @import 'layout/flex';
+ @import 'layout/section';
+ @import 'layout/article';
+
+ @import 'component/form';
+ @import 'component/browser-notice';
+ @import 'component/button';
+ @import 'component/heading';
+ @import 'component/site-branding';
+ @import 'component/site-menu';
+
+ @import 'utility/screen-reader';
+ @import 'utility/clearfix';
+ @import 'utility/display';
+ @import 'utility/hidden';
+ @import 'utility/float';
+ @import 'utility/width-height';
+ @import 'utility/padding';
+ @import 'utility/margin';
+ @import 'utility/typography';
+ @import 'utility/list';
+ @import 'utility/color';
+ @import 'utility/background';
+ @import 'utility/overflow';
+ @import 'utility/image';

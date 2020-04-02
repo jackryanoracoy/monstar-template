@@ -1,0 +1,20 @@
+/*!
+ * Name:        Monstar Template
+ * Author:      JACKRO (Jack Ryan Oracoy)
+ * Author URI:  https://jackryanoracoy.github.io
+ * Email:       jackryanoracoy@gmail.com
+ * Description: A Scalable and Maintainable Architecture
+ * License:     The MIT License
+ * License URI: https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+ */
+
+ $responsive: true;
+
+ @import 'setting/variable';
+ @import 'setting/mixin';
+ @import 'component/form';
+ @import 'component/browser-notice';
+ @import 'component/button';
+ @import 'component/heading';
+ @import 'component/site-branding';
+ @import 'component/site-menu';
