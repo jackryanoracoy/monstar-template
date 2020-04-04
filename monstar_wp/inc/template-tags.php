@@ -4,14 +4,14 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package monstar_wp_legacy
+ * @package monstar_wp
  */
 
-if ( ! function_exists( 'monstar_wp_legacy_posted_on' ) ) :
+if ( ! function_exists( 'monstar_wp_posted_on' ) ) :
   /*
    * Prints HTML with meta information for the current post-date/time.
    */
-  function monstar_wp_legacy_posted_on() {
+  function monstar_wp_posted_on() {
     $time_string = '<time class="entry-date is-published is-updated" datetime="%1$s">%2$s</time>';
     if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
       $time_string = '<time class="entry-date is-published" datetime="%1$s">%2$s</time><time class="entry-date-updated" datetime="%3$s">%4$s</time>';
@@ -26,7 +26,7 @@ if ( ! function_exists( 'monstar_wp_legacy_posted_on' ) ) :
 
     $posted_on = sprintf(
       /* translators: %s: post date. */
-      esc_html_x( 'Posted on %s', 'post date', 'monstar_wp_legacy' ),
+      esc_html_x( 'Posted on %s', 'post date', 'monstar_wp' ),
       '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
     );
 
@@ -35,13 +35,13 @@ if ( ! function_exists( 'monstar_wp_legacy_posted_on' ) ) :
   }
 endif;
 
-if ( ! function_exists( 'monstar_wp_legacy_posted_by' ) ) :
+if ( ! function_exists( 'monstar_wp_posted_by' ) ) :
   /*
    * Prints HTML with meta information for the current author.
    */
-  function monstar_wp_legacy_posted_by() {
+  function monstar_wp_posted_by() {
     $byline = sprintf(
-      esc_html_x( 'by %s', 'post author', 'monstar_wp_legacy' ), '<span class="author vcard"><a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+      esc_html_x( 'by %s', 'post author', 'monstar_wp' ), '<span class="author vcard"><a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
     );
 
     echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
@@ -49,23 +49,23 @@ if ( ! function_exists( 'monstar_wp_legacy_posted_by' ) ) :
   }
 endif;
 
-if ( ! function_exists( 'monstar_wp_legacy_entry_footer' ) ) :
+if ( ! function_exists( 'monstar_wp_entry_footer' ) ) :
   /*
    * Prints HTML with meta information for the categories, tags and comments.
    */
-  function monstar_wp_legacy_entry_footer() {
+  function monstar_wp_entry_footer() {
     // Hide category and tag text for pages.
     if ( 'post' === get_post_type() ) {
       /* translators: used between list items, there is a space after the comma */
-      $categories_list = get_the_category_list( esc_html__( ', ', 'monstar_wp_legacy' ) );
+      $categories_list = get_the_category_list( esc_html__( ', ', 'monstar_wp' ) );
       if ( $categories_list ) {
-        printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'monstar_wp_legacy' ) . '</span>', $categories_list );
+        printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'monstar_wp' ) . '</span>', $categories_list );
       }
 
       /* translators: used between list items, there is a space after the comma */
-      $tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'monstar_wp_legacy' ) );
+      $tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'monstar_wp' ) );
       if ( $tags_list ) {
-        printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'monstar_wp_legacy' ) . '</span>', $tags_list );
+        printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'monstar_wp' ) . '</span>', $tags_list );
       }
     }
 
@@ -74,7 +74,7 @@ if ( ! function_exists( 'monstar_wp_legacy_entry_footer' ) ) :
       comments_popup_link(
         sprintf(
           wp_kses(
-            __( 'Leave a Comment<span class="sr-only"> on %s</span>', 'monstar_wp_legacy' ),
+            __( 'Leave a Comment<span class="sr-only"> on %s</span>', 'monstar_wp' ),
             array( 'span' => array( 'class' => array(),	),	)
           ),
           get_the_title()
@@ -86,7 +86,7 @@ if ( ! function_exists( 'monstar_wp_legacy_entry_footer' ) ) :
     edit_post_link(
       sprintf(
         wp_kses(
-          __( 'Edit <span class="sr-only">%s</span>', 'monstar_wp_legacy' ),
+          __( 'Edit <span class="sr-only">%s</span>', 'monstar_wp' ),
           array( 'span' => array( 'class' => array(),	), )
         ),
         get_the_title()
@@ -97,14 +97,14 @@ if ( ! function_exists( 'monstar_wp_legacy_entry_footer' ) ) :
   }
 endif;
 
-if ( ! function_exists( 'monstar_wp_legacy_post_thumbnail' ) ) :
+if ( ! function_exists( 'monstar_wp_post_thumbnail' ) ) :
   /*
    * Displays an optional post thumbnail.
    *
    * Wraps the post thumbnail in an anchor element on index views, or a div
    * element when on single views.
    */
-  function monstar_wp_legacy_post_thumbnail() {
+  function monstar_wp_post_thumbnail() {
     if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
       return;
     }

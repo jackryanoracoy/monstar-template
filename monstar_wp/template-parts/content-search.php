@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package monstar_wp_legacy
+ * @package monstar_wp
  */
 
 ?>
@@ -16,18 +16,18 @@
 
           <div class="entry-meta">
             <?php
-            monstar_wp_legacy_posted_on();
-            monstar_wp_legacy_posted_by();
+            monstar_wp_posted_on();
+            monstar_wp_posted_by();
             ?>
           </div><!-- End - meta -->
 
           <?php endif; ?>
 
-          <?php monstar_wp_legacy_post_thumbnail(); ?>
+          <?php monstar_wp_post_thumbnail(); ?>
 
           <div class="entry-summary">
             <?php the_excerpt(); ?>
           </div><!-- End - summary -->
 
-          <?php monstar_wp_legacy_entry_footer(); ?>
+          <?php monstar_wp_entry_footer(); ?>
 

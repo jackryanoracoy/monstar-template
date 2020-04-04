@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package monstar_wp_legacy
+ * @package monstar_wp
  */
 
 /*
@@ -27,12 +27,12 @@ if ( post_password_required() ) {
 
           <h2 class="heading-section">
             <?php
-            $monstar_wp_legacy_comment_count = get_comments_number();
-            if ( '1' === $monstar_wp_legacy_comment_count ) {
-              printf( esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'monstar_wp_legacy' ), '<span>' . get_the_title() . '</span>' );
+            $monstar_wp_comment_count = get_comments_number();
+            if ( '1' === $monstar_wp_comment_count ) {
+              printf( esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'monstar_wp' ), '<span>' . get_the_title() . '</span>' );
             } else {
-              printf( esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $monstar_wp_legacy_comment_count, 'comments title', 'monstar_wp_legacy' ) ),
-              number_format_i18n( $monstar_wp_legacy_comment_count ), '<span>' . get_the_title() . '</span>' );
+              printf( esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $monstar_wp_comment_count, 'comments title', 'monstar_wp' ) ),
+              number_format_i18n( $monstar_wp_comment_count ), '<span>' . get_the_title() . '</span>' );
             }
             ?>
           </h2>
@@ -55,7 +55,7 @@ if ( post_password_required() ) {
           if ( ! comments_open() ) :
           ?>
 
-          <p class="comment-none"><?php esc_html_e( 'Comments are closed.', 'monstar_wp_legacy' ); ?></p>
+          <p class="comment-none"><?php esc_html_e( 'Comments are closed.', 'monstar_wp' ); ?></p>
 
           <?php
           endif;

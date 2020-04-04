@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package monstar_wp_legacy
+ * @package monstar_wp
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

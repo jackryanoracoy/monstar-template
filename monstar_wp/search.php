@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package monstar_wp_legacy
+ * @package monstar_wp
  */
 
 get_header();
@@ -23,7 +23,7 @@ get_header();
           <?php if ( have_posts() ) : ?>
 
           <h1 class="heading-section">
-            <?php printf( esc_html__( 'Search Results for: %s', 'monstar_wp_legacy' ), '<span>' . get_search_query() . '</span>' ); ?>
+            <?php printf( esc_html__( 'Search Results for: %s', 'monstar_wp' ), '<span>' . get_search_query() . '</span>' ); ?>
           </h1>
 
           <?php

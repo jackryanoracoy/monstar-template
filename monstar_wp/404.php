@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package monstar_wp_legacy
+ * @package monstar_wp
  */
 
 get_header();
@@ -20,9 +20,9 @@ get_header();
       <div class="container">
         <section class="section">
 
-          <h1 class="heading-section"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'monstar_wp_legacy' ); ?></h1>
+          <h1 class="heading-section"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'monstar_wp' ); ?></h1>
 
-          <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'monstar_wp_legacy' ); ?></p>
+          <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'monstar_wp' ); ?></p>
 
           <?php
           get_search_form();
@@ -30,7 +30,7 @@ get_header();
           ?>
 
           <article class="article">
-            <h2 class="heading-article"><?php esc_html_e( 'Most Used Categories', 'monstar_wp_legacy' ); ?></h2>
+            <h2 class="heading-article"><?php esc_html_e( 'Most Used Categories', 'monstar_wp' ); ?></h2>
             <ul>
               <?php
               wp_list_categories( array(
@@ -46,8 +46,8 @@ get_header();
 
           <?php
           /* translators: %1$s: smiley */
-          $monstar_wp_legacy_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'monstar_wp_legacy' ), convert_smilies( ':)' ) ) . '</p>';
-          the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$monstar_wp_legacy_archive_content" );
+          $monstar_wp_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'monstar_wp' ), convert_smilies( ':)' ) ) . '</p>';
+          the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$monstar_wp_archive_content" );
 
           the_widget( 'WP_Widget_Tag_Cloud' );
           ?>

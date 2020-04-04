@@ -1,8 +1,8 @@
 <?php
 /*
- * monstar_wp_legacy Theme Customizer
+ * monstar_wp Theme Customizer
  *
- * @package monstar_wp_legacy
+ * @package monstar_wp
  */
 
 /*
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function monstar_wp_legacy_customize_register( $wp_customize ) {
+function monstar_wp_customize_register( $wp_customize ) {
   $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
   $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
   $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -18,22 +18,22 @@ function monstar_wp_legacy_customize_register( $wp_customize ) {
   if ( isset( $wp_customize->selective_refresh ) ) {
     $wp_customize->selective_refresh->add_partial( 'blogname', array(
       'selector'        => '.site-branding-title a',
-      'render_callback' => 'monstar_wp_legacy_customize_partial_blogname',
+      'render_callback' => 'monstar_wp_customize_partial_blogname',
     ) );
     $wp_customize->selective_refresh->add_partial( 'blogdescription', array(
       'selector'        => '.site-description',
-      'render_callback' => 'monstar_wp_legacy_customize_partial_blogdescription',
+      'render_callback' => 'monstar_wp_customize_partial_blogdescription',
     ) );
   }
 }
-add_action( 'customize_register', 'monstar_wp_legacy_customize_register' );
+add_action( 'customize_register', 'monstar_wp_customize_register' );
 
 /*
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function monstar_wp_legacy_customize_partial_blogname() {
+function monstar_wp_customize_partial_blogname() {
   bloginfo( 'name' );
 }
 
@@ -42,14 +42,14 @@ function monstar_wp_legacy_customize_partial_blogname() {
  *
  * @return void
  */
-function monstar_wp_legacy_customize_partial_blogdescription() {
+function monstar_wp_customize_partial_blogdescription() {
   bloginfo( 'description' );
 }
 
 /*
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function monstar_wp_legacy_customize_preview_js() {
-  wp_enqueue_script( 'monstar_wp_legacy-customizer', get_template_directory_uri() . '/scripts/customizer.js', array( 'customize-preview' ), '20151215', true );
+function monstar_wp_customize_preview_js() {
+  wp_enqueue_script( 'monstar_wp-customizer', get_template_directory_uri() . '/scripts/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
-add_action( 'customize_preview_init', 'monstar_wp_legacy_customize_preview_js' );
+add_action( 'customize_preview_init', 'monstar_wp_customize_preview_js' );

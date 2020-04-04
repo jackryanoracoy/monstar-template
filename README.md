@@ -1,6 +1,6 @@
-# Monstar
+# Monstar Template
   
-Monstar (Front-end Web Development Boilerplate) - A Scalable and Maintainable Architecture.  
+Monstar Template - A Scalable and Maintainable Architecture.  
   
   
 ## Getting Started  
@@ -8,8 +8,8 @@ Monstar (Front-end Web Development Boilerplate) - A Scalable and Maintainable Ar
 Get started with Monstar, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.  
 Monstar helps you build not only fast but scalable and maintainable web apps or sites. With Monstar you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...  
   
-Ready to kick-start your project using Monstar? [Read the documentation page](https://jackryanoracoy.github.io/monstar).  
-Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Or you can use our boilerplate.html included in the package.  
+Ready to kick-start your project using Monstar?  
+Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors.  
   
   
 ### Theming  
@@ -29,25 +29,6 @@ Here are the CSS variables we include (note that the :root is required). For mor
   --info: #2196F3;
   --light: #FAFAFA;
   --dark: #212121;
-
-  --red: #F44336;
-  --pink: #E91E63;
-  --purple: #9C27B0;
-  --deep-purple: #673AB7;
-  --indigo: #3F51B5;
-  --blue: #2196F3;
-  --light-blue: #03A9F4;
-  --cyan: #00BCD4;
-  --teal: #009688;
-  --green: #4CAF50;
-  --light-green: #8BC34A;
-  --lime: #CDDC39;
-  --yellow: #FFEB3B;
-  --amber: #FFC107;
-  --orange: #FF9800;
-  --deep-orange: #FF5722;
-  --brown: #795548;
-  --blue-grey: #607D8B;
 
   --grey-50: #FAFAFA;
   --grey-100: #F5F5F5;
@@ -72,6 +53,9 @@ Monstar use a handful of media queries to create sensible breakpoints for layout
 These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.  
   
 ```
+// Extra small devices (410px and up)
+@media (min-width: 410px) {...}
+  
 // Small devices (576px and up)
 @media (min-width: 576px) {...}
 
@@ -121,9 +105,9 @@ Some great works that are included in this template.
   
 ## Author  
   
-Jack Ryan Oracoy  
-[https://jackryanoracoy.github.io](https://jackryanoracoy.github.io)  
-jackryanoracoy@gmail.com  
+Monstar Lab Cebu Philippines  
+[https://www.monstarlab.ph/](https://www.monstarlab.ph/)  
+[http://freemight.com/](http://freemight.com/)  
   
   
 ## License  

@@ -2,7 +2,7 @@
 /*
  * Search Form with Custom Auto Complete
  *
- * @package monstar_wp_legacy
+ * @package monstar_wp
  */
 
 ?>

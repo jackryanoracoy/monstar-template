@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package monstar_wp_legacy
+ * @package monstar_wp
  */
 
 ?>
@@ -29,7 +29,7 @@
 
   <!--[if IE]><p class="browser-notice">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience and security.</p><![endif]-->
 
-	<a class="sr-only is-focusable" href="#site-content"><?php esc_html_e( 'Skip to content', 'monstar_wp_legacy' ); ?></a>
+	<a class="sr-only is-focusable" href="#site-content"><?php esc_html_e( 'Skip to content', 'monstar_wp' ); ?></a>
 
   <header class="site-header">
 
@@ -52,11 +52,11 @@
         <?php
         endif;
 
-        $monstar_wp_legacy_description = get_bloginfo( 'description', 'display' );
-        if ( $monstar_wp_legacy_description || is_customize_preview() ) :
+        $monstar_wp_description = get_bloginfo( 'description', 'display' );
+        if ( $monstar_wp_description || is_customize_preview() ) :
         ?>
 
-        <p class="sr-only"><?php echo $monstar_wp_legacy_description; ?></p>
+        <p class="sr-only"><?php echo $monstar_wp_description; ?></p>
 
         <?php
         endif;
