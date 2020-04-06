@@ -18,7 +18,7 @@
   font-display: auto;
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/Noto-Sans.woff2") format("woff2"), url("../assets/fonts/Noto-Sans.woff") format("woff");
+  src: url("assets/fonts/Noto-Sans.woff2") format("woff2"), url("assets/fonts/Noto-Sans.woff") format("woff");
 }
 
 @font-face {
@@ -26,7 +26,7 @@
   font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/Noto-Sans-Bold.woff2") format("woff2"), url("../assets/fonts/Noto-Sans-Bold.woff") format("woff");
+  src: url("assets/fonts/Noto-Sans-Bold.woff2") format("woff2"), url("assets/fonts/Noto-Sans-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -34,7 +34,7 @@
   font-display: auto;
   font-style: normal;
   font-weight: 300;
-  src: url("../assets/fonts/Open-Sans-Condensed-Light.woff2") format("woff2"), url("../assets/fonts/Open-Sans-Condensed-Light.woff") format("woff");
+  src: url("assets/fonts/Open-Sans-Condensed-Light.woff2") format("woff2"), url("assets/fonts/Open-Sans-Condensed-Light.woff") format("woff");
 }
 
 @font-face {
@@ -42,7 +42,7 @@
   font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/Open-Sans-Condensed-Bold.woff2") format("woff2"), url("../assets/fonts/Open-Sans-Condensed-Bold.woff") format("woff");
+  src: url("assets/fonts/Open-Sans-Condensed-Bold.woff2") format("woff2"), url("assets/fonts/Open-Sans-Condensed-Bold.woff") format("woff");
 }
 
 /*--------------------------------------------------------------
@@ -501,7 +501,7 @@ pre {
 
 @media (min-width: 410px) {
   .container {
-    max-width: 395px;
+    max-width: auto;
   }
 }
 

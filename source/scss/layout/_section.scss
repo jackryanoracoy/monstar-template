@@ -28,7 +28,7 @@
 
   &.has-padding-no { padding: 0 !important; }
 
-  @include media-breakpoint-min(xs) {
+  @include media-breakpoint-min(sm) {
     padding-right: 0;
     padding-left: 0;
   }

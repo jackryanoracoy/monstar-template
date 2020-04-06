@@ -82,10 +82,10 @@ This will ensure that the control becomes visible once focused (for sighted keyb
 </p>
 ```
   
-For visually hidden interactive controls, such as traditional “skip” links, .sr-only can be combined with the .sr-only--focusable class. This will ensure that the control becomes visible once focused (for sighted keyboard users).  
+For visually hidden interactive controls, such as traditional “skip” links, .sr-only can be combined with the .is-focusable class. This will ensure that the control becomes visible once focused (for sighted keyboard users).  
   
 ```
-<a class="sr-only sr-only--focusable" href="#site-content">Skip to main content</a>
+<a class="sr-only is-focusable" href="#site-content">Skip to main content</a>
 ```
   
 Note: To extend template's accessibility please see [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/), [WCAG 2.0](https://www.w3.org/TR/WCAG20/) and similar accessibility standards and requirements.  

@@ -3,7 +3,7 @@
  * URI:         https://github.com/jackryanoracoy/monstar-template
  * Author:      Monstar Lab Cebu
  * Author URI:  http://freemight.com/
- * Description: A Scalable and Maintainable Base Theme
+ * Description: A Scalable and Maintainable Base Template
  * Version:     1.0.0
  * License:     The MIT License
  * License URI: https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
@@ -19,7 +19,7 @@
   font-display: auto;
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/Noto-Sans.woff2") format("woff2"), url("../assets/fonts/Noto-Sans.woff") format("woff");
+  src: url("assets/fonts/Noto-Sans.woff2") format("woff2"), url("assets/fonts/Noto-Sans.woff") format("woff");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/Noto-Sans-Bold.woff2") format("woff2"), url("../assets/fonts/Noto-Sans-Bold.woff") format("woff");
+  src: url("assets/fonts/Noto-Sans-Bold.woff2") format("woff2"), url("assets/fonts/Noto-Sans-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-display: auto;
   font-style: normal;
   font-weight: 300;
-  src: url("../assets/fonts/Open-Sans-Condensed-Light.woff2") format("woff2"), url("../assets/fonts/Open-Sans-Condensed-Light.woff") format("woff");
+  src: url("assets/fonts/Open-Sans-Condensed-Light.woff2") format("woff2"), url("assets/fonts/Open-Sans-Condensed-Light.woff") format("woff");
 }
 
 @font-face {
@@ -43,7 +43,7 @@
   font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/Open-Sans-Condensed-Bold.woff2") format("woff2"), url("../assets/fonts/Open-Sans-Condensed-Bold.woff") format("woff");
+  src: url("assets/fonts/Open-Sans-Condensed-Bold.woff2") format("woff2"), url("assets/fonts/Open-Sans-Condensed-Bold.woff") format("woff");
 }
 
 /*--------------------------------------------------------------
@@ -502,7 +502,7 @@ pre {
 
 @media (min-width: 410px) {
   .container {
-    max-width: 395px;
+    max-width: auto;
   }
 }
 
@@ -2920,7 +2920,7 @@ pre {
   padding: 0 !important;
 }
 
-@media (min-width: 410px) {
+@media (min-width: 576px) {
   .section {
     padding-right: 0;
     padding-left: 0;
@@ -3317,7 +3317,6 @@ form input[type=submit] {
 }
 
 .site-branding-title {
-  padding-left: 10px;
   color: #FFFFFF !important;
   font-size: inherit;
   text-decoration: none !important;
@@ -3429,7 +3428,6 @@ form input[type=submit] {
 .site-nav li a,
 .site-nav > ul li a {
   display: block;
-  padding: 0 10px;
   color: #FFF;
   font-size: 1.6rem;
   line-height: 50px;
@@ -3446,6 +3444,11 @@ form input[type=submit] {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .site-nav li a,
+  .site-nav > ul li a {
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .site-nav li:hover a,
   .site-nav li.is-active a,

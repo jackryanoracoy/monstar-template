@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package monstar_wp
+ * @package Monstar Template
  */
 
 /*

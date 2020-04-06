@@ -2,7 +2,7 @@
 /*
  * monstar_wp Theme Customizer
  *
- * @package monstar_wp
+ * @package Monstar Template
  */
 
 /*

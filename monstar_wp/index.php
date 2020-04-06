@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package monstar_wp
+ * @package Monstar Template
  */
 
 get_header();

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package monstar_wp
+ * @package Monstar Template
  */
 
 get_header();

@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package monstar_wp
+ * @package Monstar Template
  */
 
 get_header();

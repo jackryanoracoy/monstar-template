@@ -6,18 +6,18 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package monstar_wp
+ * @package Monstar Template
  */
 
 ?>
 
   <footer class="site-footer">
 
-    <div class="u-background-grey-300">
+    <div class="background-grey-300">
       <div class="container">
         <section class="section has-padding-narrow">
 
-          <h5 class="u-text-center u-font-small u-font-medium-lg">&copy; <?php echo date('Y'); ?>&nbsp;<?php bloginfo( 'name' ); ?> - All Rights Reserved</h5>
+          <h5 class="text-center font-small font-medium-lg">&copy; <?php echo date('Y'); ?>&nbsp;<?php bloginfo( 'name' ); ?> - All Rights Reserved</h5>
 
         </section><!-- End - section -->
       </div><!-- End - container -->

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package monstar_wp
+ * @package Monstar Template
  */
 
 if ( ! function_exists( 'monstar_wp_setup' ) ) :

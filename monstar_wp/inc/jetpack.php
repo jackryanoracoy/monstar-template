@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package monstar_wp
+ * @package Monstar Template
  */
 
 /*

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package monstar_wp
+ * @package Monstar Template
  */
 
 ?>
@@ -33,7 +33,7 @@
 
   <header class="site-header">
 
-    <div class="site-header-content u-background-primary flex is-jus-spbetween is-alt-center">
+    <div class="site-header-content background-primary flex is-jus-spbetween is-alt-center">
 
       <div class="site-header-branding">
 
@@ -64,13 +64,13 @@
 
       </div><!-- End - branding -->
 
-      <div class="site-header-menu u-hidden-lg-min">
+      <div class="site-header-menu hidden-lg-min">
         <a class="site-menu" href="javascript:void(0)"><span class="site-menu-box"><span class="site-menu-inner"></span></span></a>
       </div><!-- End - menu -->
 
     </div><!-- End - content -->
 
-    <div class="site-header-content u-background-secondary">
+    <div class="site-header-content background-secondary">
 
       <nav class="site-header-navigation" role="navigation">
         <?php

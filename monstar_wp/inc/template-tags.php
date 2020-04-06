@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package monstar_wp
+ * @package Monstar Template
  */
 
 if ( ! function_exists( 'monstar_wp_posted_on' ) ) :
