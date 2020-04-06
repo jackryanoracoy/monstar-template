@@ -501,7 +501,7 @@ pre {
 
 @media (min-width: 410px) {
   .container {
-    max-width: auto;
+    max-width: 100%;
   }
 }
 

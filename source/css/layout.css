@@ -26,7 +26,7 @@
 
 @media (min-width: 410px) {
   .container {
-    max-width: auto;
+    max-width: 100%;
   }
 }
 
@@ -2539,9 +2539,6 @@
 }
 
 @media (min-width: 992px) {
-  .site-header-content {
-    padding: 0 20px;
-  }
   .site-header-content:first-child {
     height: 75px;
   }
