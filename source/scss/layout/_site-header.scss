@@ -7,31 +7,31 @@
 // License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
 
 /*--------------------------------------------------
-  Site-header
+  Site Header
 --------------------------------------------------*/
 
 .site-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  // position: fixed;
+  // top: 0;
+  // width: 100%;
   min-width: 240px;
-  z-index: 9;
+  // z-index: 9;
 
-  &,
-  &.js-active.js-show,
-  &.js-active.js-menu-opened {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  }
+  // &,
+  // &.js-active.js-show,
+  // &.js-active.js-menu-opened {
+  //   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  // }
 
-  &.js-active {
-    top: -$header-height_m;
-    transition: $transition;
-  }
+  // &.js-active {
+  //   top: -$header-height_m;
+  //   transition: $transition;
+  // }
 
-  &.js-active.js-show,
-  &.js-menu-opened {
-    top: 0 !important;
-  }
+  // &.js-active.js-show,
+  // &.js-menu-opened {
+  //   top: 0 !important;
+  // }
 
   &-content {
     padding: 0 10px;
@@ -57,9 +57,9 @@
   &-navigation.js-show { max-height: 100vh; }
 
   @include media-breakpoint-min(lg) {
-    &.js-active {
-      top: -$header-height;
-    }
+    // &.js-active {
+    //   top: -$header-height;
+    // }
 
     &-content {
       padding: 0 20px;
@@ -80,12 +80,6 @@
 
     &-navigation {
       max-height: 100vh;
-    }
-  }
-
-  @include media-breakpoint-max(lg) {
-    &.js-active {
-      box-shadow: none;
     }
   }
 

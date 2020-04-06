@@ -106,6 +106,12 @@
   max-width: 100%;
 }
 
+// Offset
+// @include offset(1)
+@mixin offset($size, $columns: $colum-count) {
+  margin-left: percentage($size / $columns);
+}
+
 // Font Face
 // @include font-face("My Font", my-font, 300);
 @mixin font-face($name, $file, $weight ) {

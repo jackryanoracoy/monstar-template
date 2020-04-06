@@ -10,5 +10,5 @@
   Image
 --------------------------------------------------*/
 
-.image-fluid { max-width: 100%; }
+.image-fluid { max-width: 100%; height: auto; }
 .image-crispt { @include img-render-crisp(); }

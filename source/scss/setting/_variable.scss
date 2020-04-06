@@ -120,21 +120,18 @@ $colum-count:           12                    !default;
 $colum-count-alt:       10                    !default;
 
 // Font Size
-$font-nm:               1.6rem                !default;
 $font-sm:               1.2rem                !default;
 $font-md:               1.4rem                !default;
+$font-nm:               1.6rem                !default;
 $font-lg:               1.8rem                !default;
 $font-xl:               2.4rem                !default;
 $font-sl:               2.8rem                !default;
 $font-ml:               3.4rem                !default;
 
 // Line Height
-$line-height-small:     1.2                   !default;
-$line-height-normal:    1.6                   !default;
-$line-height-large:     1.8                   !default;
-
-// Border
-$border-width:          1px                   !default;
+$line-height-sm:        1.2                   !default;
+$line-height-nm:        1.6                   !default;
+$line-height-lg:        1.8                   !default;
 
 // Header Height
 $header-height:         75px                  !default;

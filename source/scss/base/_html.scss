@@ -15,7 +15,7 @@ html {
   color: $dark;
   font-family: $font-primary;
   font-size: 62.5%;
-  line-height: $line-height-normal;
+  line-height: $line-height-nm;
   -webkit-tap-highlight-color: transparent;
   @include font-smoothing;
   @include text-size-adjust(100%);

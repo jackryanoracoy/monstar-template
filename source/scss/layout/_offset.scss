@@ -1,0 +1,40 @@
+// Monstar Template
+// Scalable and Maintainable Architecture.
+//
+// Author:   Monstar Lab Cebu
+// Website:  http://freemight.com/
+// URL:      https://github.com/jackryanoracoy/monstar-template
+// License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Offset
+--------------------------------------------------*/
+
+.offset-1 { @include offset(1); }
+.offset-2 { @include offset(2); }
+.offset-3 { @include offset(3); }
+.offset-4 { @include offset(4); }
+.offset-5 { @include offset(5); }
+.offset-6 { @include offset(6); }
+.offset-7 { @include offset(7); }
+.offset-8 { @include offset(8); }
+.offset-9 { @include offset(9); }
+.offset-10 { @include offset(10); }
+.offset-11 { @include offset(11); }
+
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+    .offset-#{$breakpoint}-0 { @include offset(0); }
+    .offset-#{$breakpoint}-1 { @include offset(1); }
+    .offset-#{$breakpoint}-2 { @include offset(2); }
+    .offset-#{$breakpoint}-3 { @include offset(3); }
+    .offset-#{$breakpoint}-4 { @include offset(4); }
+    .offset-#{$breakpoint}-5 { @include offset(5); }
+    .offset-#{$breakpoint}-6 { @include offset(6); }
+    .offset-#{$breakpoint}-7 { @include offset(7); }
+    .offset-#{$breakpoint}-8 { @include offset(8); }
+    .offset-#{$breakpoint}-9 { @include offset(9); }
+    .offset-#{$breakpoint}-10 { @include offset(10); }
+    .offset-#{$breakpoint}-11 { @include offset(11); }
+  }
+}

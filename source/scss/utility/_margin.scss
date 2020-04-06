@@ -16,11 +16,11 @@
 .mat-30 { margin-top: 30px; }
 .mat-40 { margin-top: 40px; }
 .mat-50 { margin-top: 50px; }
-.mat-60 { margin-top: 60px; }
-.mat-70 { margin-top: 70px; }
-.mat-80 { margin-top: 80px; }
-.mat-90 { margin-top: 90px; }
-.mat-100 { margin-top: 100px; }
+// .mat-60 { margin-top: 60px; }
+// .mat-70 { margin-top: 70px; }
+// .mat-80 { margin-top: 80px; }
+// .mat-90 { margin-top: 90px; }
+// .mat-100 { margin-top: 100px; }
 
 .mab-5 { margin-bottom: 5px; }
 .mab-10 { margin-bottom: 10px; }
@@ -28,11 +28,11 @@
 .mab-30 { margin-bottom: 30px; }
 .mab-40 { margin-bottom: 40px; }
 .mab-50 { margin-bottom: 50px; }
-.mab-60 { margin-bottom: 60px; }
-.mab-70 { margin-bottom: 70px; }
-.mab-80 { margin-bottom: 80px; }
-.mab-90 { margin-bottom: 90px; }
-.mab-100 { margin-bottom: 100px; }
+// .mab-60 { margin-bottom: 60px; }
+// .mab-70 { margin-bottom: 70px; }
+// .mab-80 { margin-bottom: 80px; }
+// .mab-90 { margin-bottom: 90px; }
+// .mab-100 { margin-bottom: 100px; }
 
 @each $breakpoint in map-keys($breakpoints) {
   @include media-breakpoint-min($breakpoint) {
@@ -44,11 +44,11 @@
     .mat-#{$breakpoint}-30 { margin-top: 30px; }
     .mat-#{$breakpoint}-40 { margin-top: 40px; }
     .mat-#{$breakpoint}-50 { margin-top: 50px; }
-    .mat-#{$breakpoint}-60 { margin-top: 60px; }
-    .mat-#{$breakpoint}-70 { margin-top: 70px; }
-    .mat-#{$breakpoint}-80 { margin-top: 80px; }
-    .mat-#{$breakpoint}-90 { margin-top: 90px; }
-    .mat-#{$breakpoint}-100 { margin-top: 100px; }
+    // .mat-#{$breakpoint}-60 { margin-top: 60px; }
+    // .mat-#{$breakpoint}-70 { margin-top: 70px; }
+    // .mat-#{$breakpoint}-80 { margin-top: 80px; }
+    // .mat-#{$breakpoint}-90 { margin-top: 90px; }
+    // .mat-#{$breakpoint}-100 { margin-top: 100px; }
 
     .mab-#{$breakpoint}-0 { margin-bottom: 0; }
     .mab-#{$breakpoint}-5 { margin-bottom: 5px; }
@@ -57,10 +57,10 @@
     .mab-#{$breakpoint}-30 { margin-bottom: 30px; }
     .mab-#{$breakpoint}-40 { margin-bottom: 40px; }
     .mab-#{$breakpoint}-50 { margin-bottom: 50px; }
-    .mab-#{$breakpoint}-60 { margin-bottom: 60px; }
-    .mab-#{$breakpoint}-70 { margin-bottom: 70px; }
-    .mab-#{$breakpoint}-80 { margin-bottom: 80px; }
-    .mab-#{$breakpoint}-90 { margin-bottom: 90px; }
-    .mab-#{$breakpoint}-100 { margin-bottom: 100px; }
+    // .mab-#{$breakpoint}-60 { margin-bottom: 60px; }
+    // .mab-#{$breakpoint}-70 { margin-bottom: 70px; }
+    // .mab-#{$breakpoint}-80 { margin-bottom: 80px; }
+    // .mab-#{$breakpoint}-90 { margin-bottom: 90px; }
+    // .mab-#{$breakpoint}-100 { margin-bottom: 100px; }
   }
 }

@@ -147,7 +147,7 @@ add_filter( 'excerpt_more', 'wp_excerpt_more' );
 function monstar_wp_scripts() {
   wp_enqueue_style( 'monstar_wp-style', get_stylesheet_uri() );
 
-  wp_enqueue_script( 'monstar_wp-script', get_template_directory_uri() . '/scripts/script.js', array(), '20200402', true );
+  wp_enqueue_script( 'monstar_wp-script', get_template_directory_uri() . '/scripts/script.js', array('jquery'), '20200402', true );
 
   wp_enqueue_script( 'monstar_wp-navigation', get_template_directory_uri() . '/scripts/navigation.js', array(), '20200402', true );
 
