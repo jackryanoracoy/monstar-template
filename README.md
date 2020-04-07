@@ -114,6 +114,19 @@ For visually hidden interactive controls, such as traditional “skip” links, 
 Note: To extend template's accessibility please see [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/), [WCAG 2.0](https://www.w3.org/TR/WCAG20/) and similar accessibility standards and requirements.  
   
   
+### Font Family  
+  
+#### Why Noto Font  
+When text is rendered by a computer, sometimes there will be characters in the text that cannot be displayed, because no font that supports them is available to the computer. When this occurs, small boxes are shown to represent the characters. In slang those small boxes have sometimes been called "tofu". Noto, as in no tofu, aims to remove tofu from the Web.  
+  
+#### About Noto Font  
+Noto is a font family comprising over 100 individual fonts, which are together designed to cover all the scripts encoded in the Unicode standard. As of October 2016, Noto fonts cover all 93 scripts defined in Unicode version 6.0 (released 2010), although fewer than 30,000 of the nearly 75,000 CJK unified ideographs in version 6.0 are covered. In total Noto fonts cover nearly 64,000 characters, which is under half of the 137,439 characters defined in Unicode 11.0 (released in June 2018).  
+  
+The Noto family is designed with the goal of achieving visual harmony (e.g., compatible heights and stroke thicknesses) across multiple languages/scripts. Commissioned by Google, the font is licensed under the SIL Open Font License. Until September 2015, the fonts were under the Apache License 2.0.
+  
+[Read the full documentation of Noto Font](https://en.wikipedia.org/wiki/Noto_fonts)  
+  
+  
 ### Samples
 Here are some sample of what to expect on this template, For more info please check *.css.  
   
