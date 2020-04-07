@@ -13,7 +13,7 @@
 
   <footer class="site-footer">
 
-    <div class="background-grey-300">
+    <div class="bg-grey-300">
       <div class="container">
         <section class="section has-padding-narrow">
 

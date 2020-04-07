@@ -8,7 +8,7 @@
  * License:     The MIT License
  * License URI: https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
  * Text Domain: monstar_wp
- * Tags:        ITCSS, SMACSS, OOCSS, SASS
+ * Tags:        Non Responsive, Scalable, Maintainable
  */
 
  $responsive: false;
@@ -45,7 +45,6 @@
  @import 'utility/screen-reader';
  @import 'utility/clearfix';
  @import 'utility/display';
- @import 'utility/hidden';
  @import 'utility/float';
  @import 'utility/width-height';
  @import 'utility/padding';

@@ -7,7 +7,7 @@
  * Version:     1.0.0
  * License:     The MIT License
  * License URI: https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
- * Tags:        ITCSS, SMACSS, OOCSS, SASS
+ * Tags:        Mobile-first, Responsive, Scalable, Maintainable
  */
 
 
@@ -3165,7 +3165,7 @@ form input[type=submit] {
 /*--------------------------------------------------
   Button
 --------------------------------------------------*/
-.button {
+.btn {
   display: inline-block;
   min-width: 50px;
   padding: 0 15px;
@@ -3182,52 +3182,52 @@ form input[type=submit] {
   white-space: nowrap;
 }
 
-.button:hover, .button:visited, .button:active, .button:focus {
+.btn:hover, .btn:visited, .btn:active, .btn:focus {
   text-decoration: none;
 }
 
-.button:hover {
+.btn:hover {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
 
-.button.is-block {
+.btn.is-block {
   display: block;
 }
 
-.button.is-large {
+.btn.is-large {
   min-width: 60px;
   line-height: 60px;
   border-radius: 30px;
   padding: 0 20px;
 }
 
-.button.is-light {
+.btn.is-light {
   color: #212121 !important;
   background-color: #FAFAFA;
 }
 
-.button.is-dark {
+.btn.is-dark {
   color: #FAFAFA !important;
   background-color: #212121;
 }
 
-.button.is-success {
+.btn.is-success {
   color: #FAFAFA !important;
   background-color: #4CAF50;
 }
 
-.button.is-warnig {
+.btn.is-warnig {
   color: #FAFAFA !important;
   background-color: #FF9800;
 }
 
-.button.is-danger {
+.btn.is-danger {
   color: #FAFAFA !important;
   background-color: #F44336;
 }
 
-.button.is-info {
+.btn.is-info {
   color: #FAFAFA !important;
   background-color: #00BCD4;
 }
@@ -4658,75 +4658,75 @@ form input[type=submit] {
 /*--------------------------------------------------
   Background
 --------------------------------------------------*/
-.background-primary {
+.bg-primary {
   background-color: #263238;
 }
 
-.background-secondary {
+.bg-secondary {
   background-color: #37474F;
 }
 
-.background-success {
+.bg-success {
   background-color: #4CAF50;
 }
 
-.background-info {
+.bg-info {
   background-color: #00BCD4;
 }
 
-.background-warning {
+.bg-warning {
   background-color: #FF9800;
 }
 
-.background-danger {
+.bg-danger {
   background-color: #F44336;
 }
 
-.background-light {
+.bg-light {
   background-color: #FAFAFA;
 }
 
-.background-dark {
+.bg-dark {
   background-color: #212121;
 }
 
-.background-grey-50 {
+.bg-grey-50 {
   background-color: #FAFAFA;
 }
 
-.background-grey-100 {
+.bg-grey-100 {
   background-color: #F5F5F5;
 }
 
-.background-grey-200 {
+.bg-grey-200 {
   background-color: #EEEEEE;
 }
 
-.background-grey-300 {
+.bg-grey-300 {
   background-color: #E0E0E0;
 }
 
-.background-grey-400 {
+.bg-grey-400 {
   background-color: #BDBDBD;
 }
 
-.background-grey-500 {
+.bg-grey-500 {
   background-color: #9E9E9E;
 }
 
-.background-grey-600 {
+.bg-grey-600 {
   background-color: #757575;
 }
 
-.background-grey-700 {
+.bg-grey-700 {
   background-color: #616161;
 }
 
-.background-grey-800 {
+.bg-grey-800 {
   background-color: #424242;
 }
 
-.background-grey-900 {
+.bg-grey-900 {
   background-color: #212121;
 }
 
@@ -4784,12 +4784,12 @@ form input[type=submit] {
 /*--------------------------------------------------
   Image
 --------------------------------------------------*/
-.image-fluid {
+.img-fluid {
   max-width: 100%;
   height: auto;
 }
 
-.image-crispt {
+.img-crispt {
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;

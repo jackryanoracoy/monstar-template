@@ -33,7 +33,7 @@
 
   <header class="site-header">
 
-    <div class="site-header-content background-primary flex is-jus-spbetween is-alt-center">
+    <div class="site-header-content bg-primary flex is-jus-spbetween is-alt-center">
 
       <div class="site-header-branding">
 
@@ -70,7 +70,7 @@
 
     </div><!-- End - content -->
 
-    <div class="site-header-content background-secondary">
+    <div class="site-header-content bg-secondary">
 
       <nav class="site-header-navigation" role="navigation">
         <?php

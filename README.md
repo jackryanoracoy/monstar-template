@@ -1,6 +1,6 @@
 # Monstar Template
   
-Monstar Template - A Scalable and Maintainable Architecture.  
+Monstar Template - A Scalable and Maintainable Architecture for Developing Mobile-first Responsive WordPress and Static Websites.  
   
   
 ## Getting Started  
@@ -24,7 +24,7 @@ monstar-template/
 ├── monstar_html5/
 │   └── * (The HTML5 Template)
 ├── monstar_wp/
-│   └── * (The Wordpress Base Theme)
+│   └── * (The WordPress Base Theme/Template)
 ├── source/
 │   ├── css
 │   ├── js
@@ -147,7 +147,7 @@ Here are some sample of what to expect on this template, For more info please ch
   
 ##### Button
 ```
-<a class="button" href="#">Button</a>
+<a class="btn" href="#">Button</a>
 ```
   
 ##### Hidden
@@ -208,21 +208,21 @@ Here are some sample of what to expect on this template, For more info please ch
   
 ##### Width and Height
 ```
-<div class="width-100 u-height-100">
+<div class="width-100 height-100">
   <!-- 100& width and height -->
 </div>
 ```
   
 ##### Padding
 ```
-<div class="pab-10 u-pab-sm-20">
+<div class="pab-10 pab-sm-20">
   <!-- Add padding (10px padding on 575px below, 20px padding on 576 and above) -->
 </div>
 ```
   
 ##### Margin
 ```
-<div class="mab-10 u-mab-sm-20">
+<div class="mab-10 mab-sm-20">
   <!-- Add margin (10px margin on 575px below, 20px margin on 576 and above) -->
 </div>
 ```
@@ -236,7 +236,7 @@ Here are some sample of what to expect on this template, For more info please ch
   
 ##### Color
 ```
-<div class="background-color-dark">
+<div class="bg-color-dark">
   <p class="color-light">Text color is light, container color is dark.</p>
 </div>
 ```
@@ -279,34 +279,6 @@ By separating rules into the five categories, naming convention is beneficial fo
   
 [Read the full documentation of SMACSS](http://smacss.com/)  
   
-### ITCSS - Inverted Triangle CSS
-ITCSS stands for Inverted Triangle CSS and it helps you to organize your project CSS files in such a way that you can better deal with (not always easy-to-deal with) CSS specifics like global namespace, cascade and selectors specificity.  
-  
-One of the key principles of ITCSS is that it separates your CSS codebase to several sections (called layers), which take the form of the inverted triangle.  
-  
-```
-_______________ Reach _______________
-
-+++++++++++++++++++++++++++++++++++++   |
-+              SETTING              +   |
-++++           BASE/GENERIC      ++++   |
-+++++++        OBJECT         +++++++   Specificity
-++++++++++     COMPONTENT  ++++++++++   |
-+++++++++++++  UTILITY  +++++++++++++   |
-++++++++++++++++    +++++++++++++++++   |
-```
-  
-**Settings** - Used with preprocessors and contain font, colors definitions, globally used mixins and functions etc.  
-  
-**Base** - Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.  
-  
-**Layout** - Class-based selectors which define undecorated design patterns, for example media object known from OOCSS.  
-  
-**Components** - Specific UI components. This is where the majority of our work takes place and our UI components are often composed of Objects and Components.  
-  
-**Utilities** - Utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class.  
-  
-No official documentation for ITCSS yet, but you can try [Moonshine](https://github.com/jackryanoracoy/moonshine) and [Twilightbloom](https://github.com/jackryanoracoy/twilightbloom/) both are using ITCSS methodology.  
   
 ### BEM - Block Element Modifier
 Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development  
@@ -357,6 +329,36 @@ We can have a normal button for usual cases, and two more states for different o
 **Structure** - BEM methodology gives your CSS code a solid structure that remains simple and easy to understand.  
   
 [Read the full documentation of BEM](http://getbem.com/introduction/)  
+  
+  
+### ITCSS - Inverted Triangle CSS
+ITCSS stands for Inverted Triangle CSS and it helps you to organize your project CSS files in such a way that you can better deal with (not always easy-to-deal with) CSS specifics like global namespace, cascade and selectors specificity.  
+  
+One of the key principles of ITCSS is that it separates your CSS codebase to several sections (called layers), which take the form of the inverted triangle.  
+  
+```
+_______________ Reach _______________
+
++++++++++++++++++++++++++++++++++++++   |
++              SETTING              +   |
+++++           BASE/GENERIC      ++++   |
++++++++        OBJECT         +++++++   Specificity
+++++++++++     COMPONTENT  ++++++++++   |
++++++++++++++  UTILITY  +++++++++++++   |
+++++++++++++++++    +++++++++++++++++   |
+```
+  
+**Settings** - Used with preprocessors and contain font, colors definitions, globally used mixins and functions etc.  
+  
+**Base** - Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.  
+  
+**Layout** - Class-based selectors which define undecorated design patterns, for example media object known from OOCSS.  
+  
+**Components** - Specific UI components. This is where the majority of our work takes place and our UI components are often composed of Objects and Components.  
+  
+**Utilities** - Utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class.  
+  
+No official documentation for ITCSS yet, but you can try [Moonshine](https://github.com/jackryanoracoy/moonshine) and [Twilightbloom](https://github.com/jackryanoracoy/twilightbloom/) both are using ITCSS methodology.  
   
   
 ## Recommended Tools 
