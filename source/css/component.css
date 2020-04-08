@@ -13,44 +13,39 @@
 /*--------------------------------------------------
   Form
 --------------------------------------------------*/
-.form, form {
+form {
   position: relative;
 }
 
-.form.is-fuid, form.is-fuid {
+form.is-fuid {
   width: 100%;
 }
 
-.form label, form label {
+form label {
   display: block;
   text-transform: uppercase;
 }
 
-.form textarea, form textarea {
+form textarea {
   max-width: 100%;
   height: 100px;
   min-height: 50px;
   resize: vertical;
 }
 
-.form input[type=checkbox], form input[type=checkbox] {
+form input[type=checkbox] {
   width: 10px;
   height: 10px;
   vertical-align: middle;
 }
 
-.form input[type=text],
-.form input[type=email],
-.form input[type=number], form input[type=text],
+form input[type=text],
 form input[type=email],
 form input[type=number] {
   height: 50px;
 }
 
-.form textarea,
-.form input[type=text],
-.form input[type=email],
-.form input[type=number], form textarea,
+form textarea,
 form input[type=text],
 form input[type=email],
 form input[type=number] {
@@ -64,18 +59,14 @@ form input[type=number] {
   border: 1px solid #757575;
 }
 
-.form button,
-.form input[type=button],
-.form input[type=submit], form button,
+form button,
 form input[type=button],
 form input[type=submit] {
   cursor: pointer;
   border: none;
 }
 
-.form button:disabled:hover,
-.form input[type=button]:disabled:hover,
-.form input[type=submit]:disabled:hover, form button:disabled:hover,
+form button:disabled:hover,
 form input[type=button]:disabled:hover,
 form input[type=submit]:disabled:hover {
   cursor: auto;
@@ -84,13 +75,7 @@ form input[type=submit]:disabled:hover {
           box-shadow: none;
 }
 
-.form button,
-.form textarea,
-.form input[type=text],
-.form input[type=email],
-.form input[type=button],
-.form input[type=number],
-.form input[type=submit], form button,
+form button,
 form textarea,
 form input[type=text],
 form input[type=email],
@@ -102,25 +87,25 @@ form input[type=submit] {
   -webkit-appearance: none;
 }
 
-.form ::-webkit-input-placeholder, form ::-webkit-input-placeholder {
+form ::-webkit-input-placeholder {
   color: inherit;
   font-size: 1.4rem;
   line-height: 50px;
 }
 
-.form :-ms-input-placeholder, form :-ms-input-placeholder {
+form :-ms-input-placeholder {
   color: inherit;
   font-size: 1.4rem;
   line-height: 50px;
 }
 
-.form ::-ms-input-placeholder, form ::-ms-input-placeholder {
+form ::-ms-input-placeholder {
   color: inherit;
   font-size: 1.4rem;
   line-height: 50px;
 }
 
-.form ::placeholder, form ::placeholder {
+form ::placeholder {
   color: inherit;
   font-size: 1.4rem;
   line-height: 50px;
@@ -209,11 +194,6 @@ form input[type=submit] {
 /*--------------------------------------------------
   Heading
 --------------------------------------------------*/
-.heading-above-the-fold,
-.heading-section {
-  font-family: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
 .heading-above-the-fold {
   color: #263238;
   font-size: 2.8rem;

@@ -22,9 +22,9 @@ monstar-template/
 │   ├── fonts/
 │   └── js/
 ├── monstar_html5/
-│   └── * (The HTML5 Template)
+│   └── * (The HTML5 Template Files)
 ├── monstar_wp/
-│   └── * (The WordPress Base Theme/Template)
+│   └── * (The WordPress Base Theme/Template Files)
 ├── source/
 │   ├── css
 │   ├── js
@@ -42,8 +42,6 @@ Here are the CSS variables we include (note that the :root is required). For mor
   
 ```
 :root {
-
-  /* Color */
   --primary: #263238;
   --secondary: #37474F;
   --success: #4CAF50;
@@ -52,7 +50,6 @@ Here are the CSS variables we include (note that the :root is required). For mor
   --info: #2196F3;
   --light: #FAFAFA;
   --dark: #212121;
-
   --grey-50: #FAFAFA;
   --grey-100: #F5F5F5;
   --grey-200: #EEEEEE;
@@ -63,8 +60,6 @@ Here are the CSS variables we include (note that the :root is required). For mor
   --grey-700: #616161;
   --grey-800: #424242;
   --grey-900: #212121;
-
-  /* font-family */
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -126,11 +121,61 @@ The Noto family is designed with the goal of achieving visual harmony (e.g., com
   
 [Read the full documentation of Noto Font](https://en.wikipedia.org/wiki/Noto_fonts)  
   
+Noto font included in Monstar Template:
+```
+monstar-template/
+└── misc/
+    └── fonts/
+        ├── Noto-Sans.woff
+        ├── Noto-Sans-Hongkong.woff
+        └── Noto-Sans-japanese.woff
+```
   
-### Samples
-Here are some sample of what to expect on this template, For more info please check *.css.  
   
-##### Container
+## Guide
+  
+Monstar Template includes base (starting) template/theme for developing HTML5 and WordPress websites, for HTML5 website use the folder named "monstar_html5" and for wordpress website use the folder named "monstar_wp".  
+  
+The "monstar_html5" folder for create HTML5 website.
+```
+monstar-template/
+└── monstar_html5/
+    └── *some_files
+```
+  
+The "monstar_wp" folder for create WordPress website.
+```
+monstar-template/
+└── monstar_wp/
+    └── *some_files
+```
+You can start your project from here, but if you want more controll or want to change the CSS naming convention, locate the "source" folder and edit source SASS files according to your preference. 
+  
+The "source" folder which contains CSS, JS, SASS files.  
+```
+monstar-template/
+└── source/
+    ├── css
+    ├── js
+    └── scss
+```
+  
+The "source" folder also contains a pre-compiled CSS of the following, choose what is relevant to your project:  
+1. [all.css](source/css/all.css) - A responsive and complete (almost) library for web development.
+2. [all-minimal.css](source/css/all-minimal.css) - A minimal CSS that only contains the essential, e.g. css variables, global reset, normalize, colors, etc...
+3. [all-nonresponsive.css](source/css/all-nonresponsive.css) - A non-responsive and complete (almost) library for web development.  
+  
+For separate codebase, CSS should be in the same order as below:  
+1. [base.css](source/css/base.css) - Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.  
+2. [layout.css](source/css/layout.css) - Class-based selectors which define undecorated design patterns, for example media object known from OOCSS.  
+3. [component.css](source/css/component.css) - Specific UI components. This is where the majority of our work takes place and our UI components are often composed of Objects and Components.  
+4. [utility.css](source/css/utility.css) - Utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class.  
+  
+### Template Samples  
+  
+Here are some sample of what to expect on this template, For more info please check source file.  
+  
+#### Container:
 ```
 <div class="container">
   <!-- Content here -->
@@ -141,7 +186,7 @@ Here are some sample of what to expect on this template, For more info please ch
 </div>
 ```
   
-##### Flex
+#### Flex:
 ```
 <div class="flex">
   <div class="flex-item-12 flex-item-md-6"><!-- Content here --></div>
@@ -149,7 +194,7 @@ Here are some sample of what to expect on this template, For more info please ch
 </div>
 ```
   
-##### Cluster Gap
+#### Gap:
 ```
 // You can omit adding class name "gap-item" on "gap" child item (only if the child item is a "div").
 <div class="flex gap-20">
@@ -158,12 +203,12 @@ Here are some sample of what to expect on this template, For more info please ch
 </div>
 ```
   
-##### Button
+#### Button:
 ```
 <a class="btn" href="#">Button</a>
 ```
   
-##### Hidden
+#### Hidden:
 ```
 <div class="hidden">
   <!-- Hidden content here (all screen) -->
@@ -210,7 +255,7 @@ Here are some sample of what to expect on this template, For more info please ch
 </div>
 ```
   
-##### Float
+#### Float:
 ```
 <div class="clearfix">
   <div class="float-left">
@@ -219,35 +264,35 @@ Here are some sample of what to expect on this template, For more info please ch
 </div>
 ```
   
-##### Width and Height
+#### Width and Height:
 ```
 <div class="width-100 height-100">
   <!-- 100& width and height -->
 </div>
 ```
   
-##### Padding
+#### Padding:
 ```
 <div class="pab-10 pab-sm-20">
   <!-- Add padding (10px padding on 575px below, 20px padding on 576 and above) -->
 </div>
 ```
   
-##### Margin
+#### Margin:
 ```
 <div class="mab-10 mab-sm-20">
   <!-- Add margin (10px margin on 575px below, 20px margin on 576 and above) -->
 </div>
 ```
   
-##### List
+#### List:
 ```
 <ul class="list">
   <li><!-- List (Without style) --></li>
 </ul>
 ```
   
-##### Color
+#### Color:
 ```
 <div class="bg-color-dark">
   <p class="color-light">Text color is light, container color is dark.</p>
@@ -291,7 +336,6 @@ By separating rules into the five categories, naming convention is beneficial fo
 ```
   
 [Read the full documentation of SMACSS](http://smacss.com/)  
-  
   
 ### BEM - Block Element Modifier
 Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development  
@@ -343,7 +387,6 @@ We can have a normal button for usual cases, and two more states for different o
   
 [Read the full documentation of BEM](http://getbem.com/introduction/)  
   
-  
 ### ITCSS - Inverted Triangle CSS
 ITCSS stands for Inverted Triangle CSS and it helps you to organize your project CSS files in such a way that you can better deal with (not always easy-to-deal with) CSS specifics like global namespace, cascade and selectors specificity.  
   
@@ -371,7 +414,7 @@ _______________ Reach _______________
   
 **Utilities** - Utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class.  
   
-No official documentation for ITCSS yet, but you can try [Moonshine](https://github.com/jackryanoracoy/moonshine) and [Twilightbloom](https://github.com/jackryanoracoy/twilightbloom/) both are using ITCSS methodology.  
+No official documentation for ITCSS yet.    
   
   
 ## Recommended Tools 
@@ -431,8 +474,7 @@ Some great works that are included in this template.
   
 ## Author  
   
-Monstar Lab Cebu Philippines  
-[https://www.monstarlab.ph/](https://www.monstarlab.ph/)  
+Monstar Lab Cebu  
 [http://freemight.com/](http://freemight.com/)  
   
   
