@@ -2904,13 +2904,6 @@ pre {
   padding: 0 !important;
 }
 
-@media (min-width: 576px) {
-  .section {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
 @media (min-width: 992px) {
   .section {
     padding-top: 60px;
