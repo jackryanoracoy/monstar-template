@@ -181,7 +181,7 @@ Here are some sample of what to expect on this template, For more info please ch
   <!-- Content here -->
 </div>
 
-<div class="container container--fluid">
+<div class="container is-fluid">
   <!-- Content here -->
 </div>
 ```
