@@ -6,15 +6,12 @@ Monstar Template - A Scalable and Maintainable Architecture for Developing Mobil
 ## Getting Started  
 
 Get started with Monstar, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.  
-Monstar helps you build not only fast but scalable and maintainable web apps or sites. With Monstar you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...  
-  
-Ready to kick-start your project using Monstar?  
-Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors.  
+Monstar Template helps you build not only fast but scalable and maintainable web apps or sites. With Monstar Template you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...  
   
   
 ### Theming  
   
-Customize Monstar with CSS variables or SASS variables for global style preferences for easy theming and component changes.
+Customize Monstar Template with CSS variables or SASS variables for global style preferences for easy theming and component changes.
 Here are the CSS variables we include (note that the :root is required). For more info, please check settings.css or the scss code base (mixins, variables etc...).
   
 ```
@@ -44,7 +41,7 @@ Here are the CSS variables we include (note that the :root is required). For mor
   
 ### Breakpoints  
   
-Monstar use a handful of media queries to create sensible breakpoints for layouts and interfaces. 
+Monstar Template use a handful of media queries to create sensible breakpoints for layouts and interfaces. 
 These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.  
   
 ```
@@ -84,140 +81,6 @@ For visually hidden interactive controls, such as traditional “skip” links, 
 ```
   
 Note: To extend template's accessibility please see [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/), [WCAG 2.0](https://www.w3.org/TR/WCAG20/) and similar accessibility standards and requirements.  
-  
-  
-## Guide
-  
-Monstar Template is library for developing responsive, mobile-first websites.  
-  
-  
-### Template Samples  
-  
-Here are some sample of what to expect on this template, For more info please check source file.  
-  
-#### Container:
-```
-<div class="container">
-  <!-- Content here -->
-</div>
-
-<div class="container is-fluid">
-  <!-- Content here -->
-</div>
-```
-  
-#### Flex:
-```
-<div class="flex">
-  <div class="flex-item-12 flex-item-md-6"><!-- Content here --></div>
-  <div class="flex-item-12 flex-item-md-6"><!-- Content here --></div>
-</div>
-```
-  
-#### Gap:
-```
-// You can omit adding class name "gap-item" on "gap" child item (only if the child item is a "div").
-<div class="flex gap-20">
-  <div class="gap-item"><!-- Content here --></div>
-  <div class="gap-item"><!-- Content here --></div>
-</div>
-```
-  
-#### Button:
-```
-<a class="btn" href="#">Button</a>
-```
-  
-#### Hidden:
-```
-<div class="hidden">
-  <!-- Hidden content here (all screen) -->
-</div>
-
-<div class="hidden-xs-min">
-  <!-- Hidden content here (411px and up) -->
-</div>
-
-<div class="hidden-sm-min">
-  <!-- Hidden content here (576px and up) -->
-</div>
-
-<div class="hidden-md-min">
-  <!-- Hidden content here (768px and up) -->
-</div>
-
-<div class="hidden-lg-min">
-  <!-- Hidden content here (992px and up) -->
-</div>
-
-<div class="hidden-xl-min">
-  <!-- Hidden content here (1200px and up) -->
-</div>
-
-<div class="hidden-xs-max">
-  <!-- Hidden content here (410px and down) -->
-</div>
-
-<div class="hidden-sm-max">
-  <!-- Hidden content here (575px and down) -->
-</div>
-
-<div class="hidden-md-max">
-  <!-- Hidden content here (767px and down) -->
-</div>
-
-<div class="hidden-lg-max">
-  <!-- Hidden content here (991px and down) -->
-</div>
-
-<div class="hidden-xl-max">
-  <!-- Hidden content here (1199px and down) -->
-</div>
-```
-  
-#### Float:
-```
-<div class="clearfix">
-  <div class="float-left">
-    <!-- Floating content here -->
-  </div>
-</div>
-```
-  
-#### Width and Height:
-```
-<div class="width-100 height-100">
-  <!-- 100& width and height -->
-</div>
-```
-  
-#### Padding:
-```
-<div class="pab-10 pab-sm-20">
-  <!-- Add padding (10px padding on 575px below, 20px padding on 576 and above) -->
-</div>
-```
-  
-#### Margin:
-```
-<div class="mab-10 mab-sm-20">
-  <!-- Add margin (10px margin on 575px below, 20px margin on 576 and above) -->
-</div>
-```
-  
-#### List:
-```
-<ul class="list">
-  <li><!-- List (Without style) --></li>
-</ul>
-```
-  
-#### Color:
-```
-<div class="bg-color-dark">
-  <p class="color-light">Text color is light, container color is dark.</p>
-</div>
-```
   
   
 ## Author  

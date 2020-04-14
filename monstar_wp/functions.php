@@ -153,8 +153,6 @@ function monstar_wp_scripts() {
 
   wp_enqueue_script( 'monstar_wp-skip-link-focus-fix', get_template_directory_uri() . '/scripts/skip-link-focus-fix.js', array(), '20200402', true );
 
-  wp_localize_script( 'monstar_wp-localization', 'ajax_object', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), ));
-
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }

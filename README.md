@@ -4,12 +4,9 @@ Monstar Template - A Scalable and Maintainable Architecture for Developing Mobil
   
   
 ## Getting Started  
-
-Get started with Monstar, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.  
-Monstar helps you build not only fast but scalable and maintainable web apps or sites. With Monstar you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...  
   
-Ready to kick-start your project using Monstar?  
-Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors.  
+Get started with Monstar Template, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.  
+Monstar Template helps you build not only fast but scalable and maintainable web apps or sites. With Monstar Template you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...  
   
   
 ### Content  
@@ -37,7 +34,7 @@ monstar-template/
   
 ### Theming  
   
-Customize Monstar with CSS variables or SASS variables for global style preferences for easy theming and component changes.
+Customize Monstar Template with CSS variables or SASS variables for global style preferences for easy theming and component changes.
 Here are the CSS variables we include (note that the :root is required). For more info, please check settings.css or the scss code base (mixins, variables etc...).
   
 ```
@@ -67,7 +64,7 @@ Here are the CSS variables we include (note that the :root is required). For mor
   
 ### Breakpoints  
   
-Monstar use a handful of media queries to create sensible breakpoints for layouts and interfaces. 
+Monstar Template use a handful of media queries to create sensible breakpoints for layouts and interfaces. 
 These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.  
   
 ```
@@ -132,7 +129,7 @@ monstar-template/
 ```
   
   
-## Guide
+## Template Guides
   
 Monstar Template includes base (starting) template/theme for developing HTML5 and WordPress websites, for HTML5 website use the folder named "monstar_html5" and for wordpress website use the folder named "monstar_wp".  
   
@@ -171,7 +168,7 @@ For separate codebase, CSS should be in the same order as below:
 3. [component.css](source/css/component.css) - Specific UI components. This is where the majority of our work takes place and our UI components are often composed of Objects and Components.  
 4. [utility.css](source/css/utility.css) - Utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class.  
   
-### Template Samples  
+### Samples  
   
 Here are some sample of what to expect on this template, For more info please check source file.  
   
