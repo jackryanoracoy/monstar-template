@@ -35,8 +35,8 @@
  Custom Properties (CSS Varialbles)
 --------------------------------------------------------------*/
 :root {
-  --primary: #263238;
-  --secondary: #37474F;
+  --primary: #009688;
+  --secondary: #607D8B;
   --success: #4CAF50;
   --info: #00BCD4;
   --warning: #FF9800;
@@ -3138,7 +3138,7 @@ form ::placeholder {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
-  background-color: #263238;
+  background-color: #009688;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   white-space: nowrap;
@@ -3198,7 +3198,7 @@ form ::placeholder {
   Heading
 --------------------------------------------------*/
 .heading-above-the-fold {
-  color: #263238;
+  color: #009688;
   font-size: 2.8rem;
   letter-spacing: 0.5rem;
 }
@@ -3408,7 +3408,7 @@ form ::placeholder {
   .site-nav li.is-active a,
   .site-nav > ul li:hover a,
   .site-nav > ul li.is-active a {
-    background-color: #263238;
+    background-color: #009688;
   }
 }
 
@@ -4541,11 +4541,11 @@ form ::placeholder {
   Color
 --------------------------------------------------*/
 .color-primary {
-  color: #263238;
+  color: #009688;
 }
 
 .color-secondary {
-  color: #37474F;
+  color: #607D8B;
 }
 
 .color-success {
@@ -4616,11 +4616,11 @@ form ::placeholder {
   Background
 --------------------------------------------------*/
 .bg-primary {
-  background-color: #263238;
+  background-color: #009688;
 }
 
 .bg-secondary {
-  background-color: #37474F;
+  background-color: #607D8B;
 }
 
 .bg-success {

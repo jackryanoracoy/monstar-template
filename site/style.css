@@ -12,25 +12,6 @@
 
 
 /*--------------------------------------------------------------
- Font Face
---------------------------------------------------------------*/
-@font-face {
-  font-family: "Noto Sans";
-  font-display: auto;
-  font-style: normal;
-  font-weight: 400;
-  src: url("assets/fonts/Noto-Sans.woff2") format("woff2"), url("assets/fonts/Noto-Sans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Noto Sans";
-  font-display: auto;
-  font-style: normal;
-  font-weight: 700;
-  src: url("assets/fonts/Noto-Sans-Bold.woff2") format("woff2"), url("assets/fonts/Noto-Sans-Bold.woff") format("woff");
-}
-
-/*--------------------------------------------------------------
  Custom Properties (CSS Varialbles)
 --------------------------------------------------------------*/
 :root {
@@ -52,7 +33,7 @@
   --grey-700: #616161;
   --grey-800: #424242;
   --grey-900: #212121;
-  --font-family-sans-serif: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -86,7 +67,7 @@
 html {
   min-width: 240px;
   color: #212121;
-  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 62.5%;
   line-height: 1.6;
   -webkit-tap-highlight-color: transparent;
@@ -2966,10 +2947,6 @@ pre {
   padding: 0 10px;
 }
 
-.site-header-content:first-child {
-  height: 60px;
-}
-
 .site-header-menu {
   max-width: 50px;
 }
@@ -2991,9 +2968,6 @@ pre {
 }
 
 @media (min-width: 992px) {
-  .site-header-content:first-child {
-    height: 75px;
-  }
   .site-header-branding {
     width: auto;
     max-width: 50%;
@@ -3129,14 +3103,14 @@ form ::placeholder {
 .btn {
   display: inline-block;
   min-width: 50px;
-  padding: 0 15px;
+  padding: 0 20px;
   color: #FAFAFA !important;
   font-size: 1.6rem;
-  line-height: 50px;
+  line-height: 40px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 25px;
+  border-radius: 4px;
   background-color: #009688;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
@@ -3157,10 +3131,8 @@ form ::placeholder {
 }
 
 .btn.is-large {
-  min-width: 60px;
-  line-height: 60px;
-  border-radius: 30px;
-  padding: 0 20px;
+  min-width: 50px;
+  line-height: 50px;
 }
 
 .btn.is-light {
@@ -3198,13 +3170,13 @@ form ::placeholder {
 --------------------------------------------------*/
 .heading-above-the-fold {
   color: #009688;
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   letter-spacing: 0.5rem;
 }
 
 @media (min-width: 992px) {
   .heading-above-the-fold {
-    font-size: 3.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -3361,8 +3333,7 @@ form ::placeholder {
 /*--------------------------------------------------
   Site Nav
 --------------------------------------------------*/
-.site-nav,
-.site-nav > ul {
+.site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3373,13 +3344,11 @@ form ::placeholder {
   list-style: none;
 }
 
-.site-nav li,
-.site-nav > ul li {
+.site-nav li {
   overflow: hidden;
 }
 
-.site-nav li a,
-.site-nav > ul li a {
+.site-nav li a {
   display: block;
   color: #FFF;
   font-size: 1.6rem;
@@ -3391,22 +3360,18 @@ form ::placeholder {
 }
 
 @media (min-width: 992px) {
-  .site-nav,
-  .site-nav > ul {
+  .site-nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .site-nav li a,
-  .site-nav > ul li a {
+  .site-nav li a {
     padding-right: 10px;
     padding-left: 10px;
   }
   .site-nav li:hover a,
-  .site-nav li.is-active a,
-  .site-nav > ul li:hover a,
-  .site-nav > ul li.is-active a {
+  .site-nav li.is-active a {
     background-color: #009688;
   }
 }

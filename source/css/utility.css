@@ -1139,11 +1139,11 @@
   Color
 --------------------------------------------------*/
 .color-primary {
-  color: #263238;
+  color: #009688;
 }
 
 .color-secondary {
-  color: #37474F;
+  color: #607D8B;
 }
 
 .color-success {
@@ -1214,11 +1214,11 @@
   Background
 --------------------------------------------------*/
 .bg-primary {
-  background-color: #263238;
+  background-color: #009688;
 }
 
 .bg-secondary {
-  background-color: #37474F;
+  background-color: #607D8B;
 }
 
 .bg-success {

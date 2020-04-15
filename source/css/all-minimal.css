@@ -33,8 +33,8 @@
  Custom Properties (CSS Varialbles)
 --------------------------------------------------------------*/
 :root {
-  --primary: #263238;
-  --secondary: #37474F;
+  --primary: #009688;
+  --secondary: #607D8B;
   --success: #4CAF50;
   --info: #00BCD4;
   --warning: #FF9800;
@@ -653,11 +653,11 @@ form ::placeholder {
   Color
 --------------------------------------------------*/
 .color-primary {
-  color: #263238;
+  color: #009688;
 }
 
 .color-secondary {
-  color: #37474F;
+  color: #607D8B;
 }
 
 .color-success {
@@ -728,11 +728,11 @@ form ::placeholder {
   Background
 --------------------------------------------------*/
 .bg-primary {
-  background-color: #263238;
+  background-color: #009688;
 }
 
 .bg-secondary {
-  background-color: #37474F;
+  background-color: #607D8B;
 }
 
 .bg-success {
