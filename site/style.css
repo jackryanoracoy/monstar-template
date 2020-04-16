@@ -66,7 +66,7 @@
 --------------------------------------------------*/
 html {
   min-width: 240px;
-  color: #424242;
+  color: #212121;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 62.5%;
   line-height: 1.6;
@@ -398,12 +398,12 @@ template {
   Links
 --------------------------------------------------*/
 a {
-  color: #009688;
-  text-decoration: underline;
+  color: #00BCD4;
+  text-decoration: none;
 }
 
 a:hover, a:visited, a:active, a:focus {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 @media print {
@@ -2903,7 +2903,7 @@ pre {
   Article
 --------------------------------------------------*/
 .article {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .article.has-padding-wide {
@@ -2911,7 +2911,7 @@ pre {
 }
 
 .article.has-padding-narrow {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .article.has-padding-no {
@@ -2920,13 +2920,13 @@ pre {
 
 @media (min-width: 992px) {
   .article {
-    padding-top: 40px;
+    padding-top: 60px;
   }
   .article.has-padding-wide {
     padding-top: 120px;
   }
   .article.has-padding-narrow {
-    padding-top: 20px;
+    padding-top: 30px;
   }
 }
 
@@ -3131,18 +3131,13 @@ form ::placeholder {
 }
 
 .btn.is-large {
-  padding: 0 30px;
+  min-width: 50px;
   line-height: 50px;
 }
 
 .btn.is-light {
   color: #212121 !important;
   background-color: #FAFAFA;
-}
-
-.btn.is-secondary {
-  color: #FAFAFA !important;
-  background-color: #607D8B;
 }
 
 .btn.is-dark {
@@ -3171,69 +3166,23 @@ form ::placeholder {
 }
 
 /*--------------------------------------------------
-  Highlight
---------------------------------------------------*/
-.highlight {
-  color: #FAFAFA;
-  padding: 20px;
-  background-color: #607D8B;
-  border-radius: 4px;
-  overflow: auto;
-}
-
-.highlight.is-light {
-  color: #212121;
-  background-color: #FAFAFA;
-}
-
-.highlight.is-dark {
-  color: #FAFAFA;
-  background-color: #212121;
-}
-
-.highlight.is-success {
-  color: #FAFAFA;
-  background-color: #4CAF50;
-}
-
-.highlight.is-warning {
-  color: #FAFAFA;
-  background-color: #FF9800;
-}
-
-.highlight.is-danger {
-  color: #FAFAFA;
-  background-color: #F44336;
-}
-
-.highlight.is-info {
-  color: #FAFAFA;
-  background-color: #00BCD4;
-}
-
-.highlight.is-grey {
-  color: #212121;
-  background-color: #E0E0E0;
-}
-
-/*--------------------------------------------------
   Heading
 --------------------------------------------------*/
 .heading-above-the-fold {
   color: #009688;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   letter-spacing: 0.2rem;
 }
 
 @media (min-width: 992px) {
   .heading-above-the-fold {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 
 .heading-section {
-  color: #607D8B;
-  font-size: 1.8rem;
+  color: #616161;
+  font-size: 2.4rem;
   letter-spacing: 0.2rem;
 }
 
@@ -3243,12 +3192,12 @@ form ::placeholder {
 
 @media (min-width: 992px) {
   .heading-section {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 
 .heading-article {
-  color: #757575;
+  color: #212121;
   font-size: 1.6rem;
 }
 
@@ -3403,7 +3352,6 @@ form ::placeholder {
   display: block;
   color: #FFF;
   font-size: 1.6rem;
-  font-weight: 700;
   line-height: 50px;
   text-decoration: none;
   overflow: hidden;
@@ -3419,19 +3367,12 @@ form ::placeholder {
             flex-direction: row;
   }
   .site-nav li a {
-    position: relative;
     padding-right: 10px;
     padding-left: 10px;
   }
-  .site-nav li:hover a::before,
-  .site-nav li.is-active a::before {
-    position: absolute;
-    content: "";
-    right: 10px;
-    bottom: 0;
-    left: 10px;
-    height: 1px;
-    background-color: #FFF;
+  .site-nav li:hover a,
+  .site-nav li.is-active a {
+    background-color: #009688;
   }
 }
 
