@@ -16,7 +16,7 @@
 --------------------------------------------------------------*/
 :root {
   --primary: #009688;
-  --secondary: #607D8B;
+  --secondary: #455A64;
   --success: #4CAF50;
   --info: #00BCD4;
   --warning: #FF9800;
@@ -398,7 +398,7 @@ template {
   Links
 --------------------------------------------------*/
 a {
-  color: #009688;
+  color: #01579B;
   text-decoration: underline;
 }
 
@@ -3142,7 +3142,7 @@ form ::placeholder {
 
 .btn.is-secondary {
   color: #FAFAFA !important;
-  background-color: #607D8B;
+  background-color: #455A64;
 }
 
 .btn.is-dark {
@@ -3176,7 +3176,7 @@ form ::placeholder {
 .highlight {
   color: #FAFAFA;
   padding: 20px;
-  background-color: #607D8B;
+  background-color: #455A64;
   border-radius: 4px;
   overflow: auto;
 }
@@ -3213,7 +3213,7 @@ form ::placeholder {
 
 .highlight.is-grey {
   color: #212121;
-  background-color: #E0E0E0;
+  background-color: #EEEEEE;
 }
 
 /*--------------------------------------------------
@@ -3232,7 +3232,7 @@ form ::placeholder {
 }
 
 .heading-section {
-  color: #607D8B;
+  color: #455A64;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
 }
@@ -3248,8 +3248,22 @@ form ::placeholder {
 }
 
 .heading-article {
+  position: relative;
+  padding-left: 15px;
   color: #757575;
   font-size: 1.6rem;
+  line-height: 1;
+}
+
+.heading-article::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 5px;
+  background-color: #757575;
+  opacity: 0.5;
 }
 
 @media (min-width: 992px) {
@@ -4568,7 +4582,7 @@ form ::placeholder {
 }
 
 .color-secondary {
-  color: #607D8B;
+  color: #455A64;
 }
 
 .color-success {
@@ -4643,7 +4657,7 @@ form ::placeholder {
 }
 
 .bg-secondary {
-  background-color: #607D8B;
+  background-color: #455A64;
 }
 
 .bg-success {
