@@ -119,8 +119,8 @@ add_action( 'widgets_init', 'monstar_wp_widgets_init' );
 /*
  * Filter the except length to 20 words.
  */
-function wp_custom_excerpt_length( $length ) { return 20; }
-add_filter( 'excerpt_length', 'wp_custom_excerpt_length', 999 );
+// function wp_custom_excerpt_length( $length ) { return 20; }
+// add_filter( 'excerpt_length', 'wp_custom_excerpt_length', 999 );
 
 /*
  * Filter the "get_custom_logo".

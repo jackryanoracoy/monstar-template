@@ -293,7 +293,7 @@ Here are some sample of what to expect on this template, For more info please ch
   
 #### Color:
 ```
-<div class="bg-color-dark">
+<div class="bg-dark">
   <p class="color-light">Text color is light, container color is dark.</p>
 </div>
 ```
@@ -466,7 +466,6 @@ Some great works that are included in this template.
 * [Modernizr (v3.7.1)](https://modernizr.com/)  
 * [Object-Fit Images (v3.2.3)](https://github.com/fregante/object-fit-images/)  
 * [Normalize (v8.0.1)](https://necolas.github.io/normalize.css/)  
-* [Font Awesome (v5.10.1)](https://fontawesome.com/)  
 * [Google Fonts](https://fonts.google.com/)  
 * [EditorConfig](https://editorconfig.org)  
   

@@ -27,6 +27,13 @@
 
 <?php wp_footer(); ?>
 
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+</script>
+
 <!-- No Script -->
 <noscript><p class="browser-notice">Please enable JavaScript and revisit (reload) this page, Thank you!</p></noscript>
 

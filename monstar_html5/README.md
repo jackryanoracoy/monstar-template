@@ -1,11 +1,11 @@
 # Monstar Template
   
-Monstar Template - A Scalable and Maintainable Architecture for Developing Mobile-first Responsive WordPress and Static Websites.  
+Monstar Template - A Scalable and Maintainable Template for Developing Mobile-first Responsive WordPress and Static Websites.  
   
   
 ## Getting Started  
 
-Get started with Monstar, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.  
+Get started with Monstar, a scalable and maintainable template for building responsive, mobile-first web apps or sites.  
 Monstar Template helps you build not only fast but scalable and maintainable web apps or sites. With Monstar Template you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...  
   
   
