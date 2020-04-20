@@ -130,7 +130,7 @@
               <h3 class="heading-article mab-20">Theming</h3>
 
               <p class="mab-20">Customize Monstar Template with CSS variables or SASS variables for global style preferences for easy theming and component changes.
-              Here are the CSS variables we include (note that the <code class="color-danger">:root</code> is required). For more info, please check settings.css or the scss code base (mixins, variables etc...).</p>
+              Here are the CSS variables we include (note that the <code class="color-primary">:root</code> is required). For more info, please check settings.css or the scss code base (mixins, variables etc...).</p>
 
               <div class="highlight">
                 <pre><code>
@@ -204,7 +204,7 @@
               <h3 class="heading-article mab-20">Accessibility</h3>
 
               <p class="mab-20">Content which should be visually hidden,
-              <br>but remain accessible to assistive technologies such as screen readers, can be styled using the <code class="color-danger">.sr-only</code> class.
+              <br>but remain accessible to assistive technologies such as screen readers, can be styled using the <code class="color-primary">.sr-only</code> class.
               <br>This will ensure that the control becomes visible once focused (for sighted keyboard users).</p>
 
               <div class="highlight mab-20">
@@ -218,7 +218,7 @@
               </div><!-- End - highlight  -->
 
               <p class="mab-20">For visually hidden interactive controls, such as traditional “skip” links,
-              <code class="color-danger">.sr-only</code> can be combined with the <code class="color-danger">.sr-only.is-focusable</code> class.
+              <code class="color-primary">.sr-only</code> can be combined with the <code class="color-primary">.sr-only.is-focusable</code> class.
               This will ensure that the control becomes visible once focused (for sighted keyboard users).</p>
 
               <div class="highlight mab-20">
@@ -242,13 +242,13 @@
             <h2 class="heading-section mab-20 mab-lg-40">How To Guide</h2>
 
             <p>Monstar Template includes base (starting) template/theme for developing HTML5 and WordPress websites,
-            for HTML5 website use the folder named <code class="color-danger">"monstar_html5"</code> and for wordpress website use the folder named <code class="color-danger">"monstar_wp"</code>.</p>
+            for HTML5 website use the folder named <code class="color-primary">"monstar_html5"</code> and for wordpress website use the folder named <code class="color-primary">"monstar_wp"</code>.</p>
 
             <article class="article">
 
               <h3 class="heading-article mab-20">Folders</h3>
 
-              <p class="mab-20">The "monstar_html5" folder for create HTML5 website.</p>
+              <p class="mab-20">The <strong class="color-primary">"monstar_html5"</strong> folder for create HTML5 website.</p>
 
               <div class="highlight mab-20">
                 <pre><code>
@@ -259,7 +259,7 @@
                 </code></pre>
               </div><!-- End - highlight  -->
 
-              <p class="mab-20">The "monstar_wp" folder for create WordPress website.</p>
+              <p class="mab-20">The <strong class="color-primary">"monstar_wp"</strong> folder for create WordPress website.</p>
 
               <div class="highlight mab-20">
                 <pre><code>
@@ -270,9 +270,9 @@
                 </code></pre>
               </div><!-- End - highlight  -->
 
-              <p class="mab-20">The "source" folder which contains CSS, JS, SASS files</p>
+              <p class="mab-20">The <strong class="color-primary">"source"</strong> folder which contains CSS, JS, SASS files</p>
 
-              <div class="highlight">
+              <div class="highlight mab-20">
                 <pre><code>
                 monstar-template/
                 └── source/
@@ -282,6 +282,23 @@
                 <!-- Sample Codes -->
                 </code></pre>
               </div><!-- End - highlight  -->
+
+              <p class="mab-20">The <strong class="color-primary">"source"</strong> folder also contains a pre-compiled CSS of the following, choose what is relevant to your project:</p>
+
+              <ul class="list mab-20">
+                <li><strong class="color-secondary">all.css</strong> - A responsive and complete (almost) library for web development.</li>
+                <li><strong class="color-secondary">all-minimal.css</strong> - A minimal CSS that only contains the essential, e.g. css variables, global reset, normalize, colors, etc...</li>
+                <li><strong class="color-secondary">all-nonresponsive.css</strong> - A non-responsive and complete (almost) library for web development.</li>
+              </ul><!-- End - list -->
+
+              <p class="mab-20">For separate codebase, CSS should be in the same order as below:</p>
+
+              <ul class="list mab-20">
+                <li><strong class="color-secondary">base.css</strong> - Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.</li>
+                <li><strong class="color-secondary">layout.css</strong> - Class-based selectors which define undecorated design patterns, for example media object known from OOCSS.</li>
+                <li><strong class="color-secondary">component.css</strong> - Specific UI components. This is where the majority of our work takes place and our UI components are often composed of Objects and Components.</li>
+                <li><strong class="color-secondary">utility.css</strong> - Utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class.</li>
+              </ul>
 
               <p class="flex is-wrp-no font-small highlight is-grey mat-20">
               <span>NOTE:&emsp;</span>
