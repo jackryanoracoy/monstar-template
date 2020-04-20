@@ -291,7 +291,7 @@ Here are some sample of what to expect on this template, For more info please ch
   
 #### Color:
 ```
-<div class="bg-color-dark">
+<div class="bg-dark">
   <p class="color-light">Text color is light, container color is dark.</p>
 </div>
 ```
