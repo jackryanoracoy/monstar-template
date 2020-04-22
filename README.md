@@ -135,14 +135,14 @@ monstar-template/
   
 Monstar Template includes base (starting) template/theme for developing HTML5 and WordPress websites, for HTML5 website use the folder named "monstar_html5" and for wordpress website use the folder named "monstar_wp".  
   
-The "monstar_html5" folder for create HTML5 website.
+The "monstar_html5" folder for creating HTML5 website.
 ```
 monstar-template/
 └── monstar_html5/
     └── *some_files
 ```
   
-The "monstar_wp" folder for create WordPress website.
+The "monstar_wp" folder for creating WordPress website.
 ```
 monstar-template/
 └── monstar_wp/
