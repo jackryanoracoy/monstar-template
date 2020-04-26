@@ -1,8 +1,8 @@
 // Monstar Template
 // Scalable and Maintainable Architecture.
 //
-// Author:   Monstar Lab Cebu
-// Website:  http://freemight.com/
+// Author:   JackRO & Monstar Lab Cebu
+// Website:  https://monstar-template.ml
 // URL:      https://github.com/jackryanoracoy/monstar-template
 // License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
 
@@ -11,40 +11,32 @@
 --------------------------------------------------*/
 
 .site-header {
-  // position: fixed;
-  // top: 0;
-  // width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
   min-width: 240px;
-  // z-index: 9;
+  z-index: 9;
 
-  // &,
-  // &.js-active.js-show,
-  // &.js-active.js-menu-opened {
-  //   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  // }
+  &,
+  &.js-active.js-show,
+  &.js-active.js-menu-opened {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  }
 
-  // &.js-active {
-  //   top: -$header-height_m;
-  //   transition: $transition;
-  // }
+  &.js-active {
+    top: -$header-height_m;
+    transition: $transition;
+  }
 
-  // &.js-active.js-show,
-  // &.js-menu-opened {
-  //   top: 0 !important;
-  // }
+  &.js-active.js-show,
+  &.js-menu-opened {
+    top: 0 !important;
+  }
 
   &-content {
     padding: 0 $section-gutter-hor;
 
     &:first-child { height: $header-height_m; }
-  }
-
-  &-menu {
-    max-width: 50px;
-  }
-
-  &-branding {
-    max-width: calc(100% - 50px);
   }
 
   &-navigation {
@@ -57,9 +49,9 @@
   &-navigation.js-show { max-height: 100vh; }
 
   @include media-breakpoint-min(lg) {
-    // &.js-active {
-    //   top: -$header-height;
-    // }
+    &.js-active {
+      top: -$header-height;
+    }
 
     &-content:first-child {
       height: $header-height;
@@ -80,6 +72,9 @@
   }
 
   @media print {
-    position: absolute;
+    position: relative;
+    border-bottom: 1px solid $primary;
+
+    &-menu, &-navigation { display: none; }
   }
 }

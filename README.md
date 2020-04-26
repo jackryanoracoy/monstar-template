@@ -472,6 +472,9 @@ Some great works that are included in this template.
   
 ## Author  
   
+Jack Ryan Oracoy  
+[https://jackryanoracoy.github.io/](https://jackryanoracoy.github.io/)  
+  
 Monstar Lab Cebu  
 [http://freemight.com/](http://freemight.com/)  
   

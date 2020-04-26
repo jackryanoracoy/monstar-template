@@ -36,6 +36,27 @@ $(document).ready(function() {
   });
 });
 
+// Immersive
+$(document).ready(function($) {
+  var lastScroll = 0;
+    $(window).scroll(function() {
+    setTimeout(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll > lastScroll + 10) {
+        $(".site-header").removeClass("js-show");
+      } else if (scroll < lastScroll - 10) {
+        $(".site-header").addClass("js-show");
+      }
+
+      if (scroll >= 100) {
+        $(".site-header").addClass("js-active");
+      } else {
+        $(".site-header").removeClass("js-active");
+      } lastScroll = scroll;
+    }, 300);
+  });
+});
+
 // Toggle class on click
 $(document).ready(function($) {
   $('.site-menu').click(function() {

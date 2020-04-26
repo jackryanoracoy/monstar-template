@@ -1,54 +1,52 @@
 /*!
- * Theme Name:  Monstar Template
- * Theme URI:   https://github.com/jackryanoracoy/monstar-template
- * Author:      Monstar Lab Cebu
- * Author URI:  http://freemight.com/
- * Description: A Scalable and Maintainable Base Theme
+ * Name:        Monstar Template
+ * URI:         https://github.com/jackryanoracoy/monstar-template
+ * Author:      JackRO & Monstar Lab Cebu
+ * Author URI:  https://monstar-template.ml
+ * Description: A Scalable and Maintainable Template
  * Version:     1.0.0
  * License:     The MIT License
  * License URI: https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
- * Text Domain: monstar_wp
- * Tags:        ITCSS, SMACSS, OOCSS, SASS
  */
 /*--------------------------------------------------
   Form
 --------------------------------------------------*/
-form {
+.form {
   position: relative;
 }
 
-form.is-fuid {
+.form.is-fuid {
   width: 100%;
 }
 
-form label {
+.form label {
   display: block;
   text-transform: uppercase;
 }
 
-form textarea {
+.form textarea {
   max-width: 100%;
   height: 100px;
   min-height: 50px;
   resize: vertical;
 }
 
-form input[type=checkbox] {
+.form input[type=checkbox] {
   width: 10px;
   height: 10px;
   vertical-align: middle;
 }
 
-form input[type=text],
-form input[type=email],
-form input[type=number] {
+.form input[type=text],
+.form input[type=email],
+.form input[type=number] {
   height: 50px;
 }
 
-form textarea,
-form input[type=text],
-form input[type=email],
-form input[type=number] {
+.form textarea,
+.form input[type=text],
+.form input[type=email],
+.form input[type=number] {
   padding: 10px;
   color: inherit;
   font-size: 1.4rem;
@@ -59,53 +57,53 @@ form input[type=number] {
   border: 1px solid #757575;
 }
 
-form button,
-form input[type=button],
-form input[type=submit] {
+.form button,
+.form input[type=button],
+.form input[type=submit] {
   cursor: pointer;
   border: none;
 }
 
-form button:disabled:hover,
-form input[type=button]:disabled:hover,
-form input[type=submit]:disabled:hover {
+.form button:disabled:hover,
+.form input[type=button]:disabled:hover,
+.form input[type=submit]:disabled:hover {
   cursor: auto;
   opacity: 0.5;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-form button,
-form textarea,
-form input[type=text],
-form input[type=email],
-form input[type=button],
-form input[type=number],
-form input[type=submit] {
+.form button,
+.form textarea,
+.form input[type=text],
+.form input[type=email],
+.form input[type=button],
+.form input[type=number],
+.form input[type=submit] {
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
 }
 
-form ::-webkit-input-placeholder {
+.form ::-webkit-input-placeholder {
   color: inherit;
   font-size: 1.4rem;
   line-height: 50px;
 }
 
-form :-ms-input-placeholder {
+.form :-ms-input-placeholder {
   color: inherit;
   font-size: 1.4rem;
   line-height: 50px;
 }
 
-form ::-ms-input-placeholder {
+.form ::-ms-input-placeholder {
   color: inherit;
   font-size: 1.4rem;
   line-height: 50px;
 }
 
-form ::placeholder {
+.form ::placeholder {
   color: inherit;
   font-size: 1.4rem;
   line-height: 50px;
@@ -128,14 +126,14 @@ form ::placeholder {
   display: inline-block;
   min-width: 50px;
   padding: 0 15px;
-  color: #FAFAFA !important;
+  color: #212121 !important;
   font-size: 1.6rem;
   line-height: 50px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
-  background-color: #009688;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   white-space: nowrap;
@@ -161,34 +159,40 @@ form ::placeholder {
   padding: 0 20px;
 }
 
-.btn.is-light {
-  color: #212121 !important;
-  background-color: #FAFAFA;
+.btn.is-primary, .btn.is-secondary, .btn.is-success, .btn.is-info, .btn.is-warning, .btn.is-danger, .btn.is-light, .btn.is-dark {
+  color: #FFFFFF !important;
 }
 
-.btn.is-dark {
-  color: #FAFAFA !important;
-  background-color: #212121;
+.btn.is-primary {
+  background-color: #009688;
+}
+
+.btn.is-secondary {
+  background-color: #607D8B;
 }
 
 .btn.is-success {
-  color: #FAFAFA !important;
   background-color: #4CAF50;
 }
 
-.btn.is-warnig {
-  color: #FAFAFA !important;
+.btn.is-info {
+  background-color: #00BCD4;
+}
+
+.btn.is-warning {
   background-color: #FF9800;
 }
 
 .btn.is-danger {
-  color: #FAFAFA !important;
   background-color: #F44336;
 }
 
-.btn.is-info {
-  color: #FAFAFA !important;
-  background-color: #00BCD4;
+.btn.is-light {
+  background-color: #E0E0E0;
+}
+
+.btn.is-dark {
+  background-color: #212121;
 }
 
 /*--------------------------------------------------
@@ -289,7 +293,7 @@ form ::placeholder {
 .site-menu {
   position: relative;
   display: block;
-  color: #FAFAFA;
+  color: #FFFFFF;
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
@@ -314,7 +318,7 @@ form ::placeholder {
   display: block;
   width: inherit;
   height: 4px;
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
 }
 
 .site-menu-inner::after, .site-menu-inner::before {
@@ -323,7 +327,7 @@ form ::placeholder {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
@@ -354,5 +358,58 @@ form ::placeholder {
   bottom: 0;
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
+}
+
+/*--------------------------------------------------
+  Site Nav
+--------------------------------------------------*/
+.site-nav,
+.site-nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+.site-nav li,
+.site-nav > ul li {
+  overflow: hidden;
+}
+
+.site-nav li a,
+.site-nav > ul li a {
+  display: block;
+  color: #FFF;
+  font-size: 1.6rem;
+  line-height: 50px;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .site-nav,
+  .site-nav > ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .site-nav li a,
+  .site-nav > ul li a {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .site-nav li:hover a,
+  .site-nav li.is-active a,
+  .site-nav > ul li:hover a,
+  .site-nav > ul li.is-active a {
+    background-color: #009688;
+  }
 }
 /*# sourceMappingURL=component.css.map */

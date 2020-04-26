@@ -50,6 +50,6 @@ function monstar_wp_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function monstar_wp_customize_preview_js() {
-  wp_enqueue_script( 'monstar_wp-customizer', get_template_directory_uri() . '/scripts/customizer.js', array( 'customize-preview' ), '20151215', true );
+  wp_enqueue_script( 'monstar_wp-customizer', get_template_directory_uri() . '/assets/scripts/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'monstar_wp_customize_preview_js' );

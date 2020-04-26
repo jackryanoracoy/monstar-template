@@ -1,8 +1,8 @@
 // Monstar Template
 // Scalable and Maintainable Architecture.
 //
-// Author:   Monstar Lab Cebu
-// Website:  http://freemight.com/
+// Author:   JackRO & Monstar Lab Cebu
+// Website:  https://monstar-template.ml
 // URL:      https://github.com/jackryanoracoy/monstar-template
 // License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
 
@@ -85,17 +85,17 @@
 
 // Flex Column
 // @include flex-col-width(1)
-@mixin flex-col-width($size, $columns: $colum-count) {
+@mixin flex-col-width($size, $columns: $column-count) {
   flex: 0 0 percentage($size / $columns);
   max-width: percentage($size / $columns);
 }
 
-@mixin flex-col-width-alt($size, $columns: $colum-count-alt) {
+@mixin flex-col-width-alt($size, $columns: $column-count-alt) {
   flex: 0 0 percentage($size / $columns);
   max-width: percentage($size / $columns);
 }
 
-@mixin basis-col-width($size, $columns: $colum-count) {
+@mixin basis-col-width($size, $columns: $column-count) {
   flex-basis: percentage($size / $columns);
   max-width: percentage($size / $columns);
 }
@@ -108,7 +108,7 @@
 
 // Offset
 // @include offset(1)
-@mixin offset($size, $columns: $colum-count) {
+@mixin offset($size, $columns: $column-count) {
   margin-left: percentage($size / $columns);
 }
 
@@ -120,8 +120,8 @@
     font-display: auto;
     font-style: normal;
     font-weight: #{$weight};
-    src: url('assets/fonts/#{$file}.woff2') format('woff2'),
-         url('assets/fonts/#{$file}.woff') format('woff'),
+    src: url('../../assets/fonts/#{$file}.woff2') format('woff2'),
+         url('../../assets/fonts/#{$file}.woff') format('woff'),
   }
 }
 

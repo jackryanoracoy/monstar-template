@@ -1,14 +1,12 @@
 /*!
- * Theme Name:  Monstar Template
- * Theme URI:   https://github.com/jackryanoracoy/monstar-template
- * Author:      Monstar Lab Cebu
- * Author URI:  http://freemight.com/
- * Description: A Scalable and Maintainable Base Theme
+ * Name:        Monstar Template
+ * URI:         https://github.com/jackryanoracoy/monstar-template
+ * Author:      JackRO & Monstar Lab Cebu
+ * Author URI:  https://monstar-template.ml
+ * Description: A Scalable and Maintainable Template
  * Version:     1.0.0
  * License:     The MIT License
  * License URI: https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
- * Text Domain: monstar_wp
- * Tags:        Mobile-first, Responsive, Scalable, Maintainable
  */
 
  $responsive: true;
@@ -33,6 +31,7 @@
  @import 'layout/section';
  @import 'layout/article';
  @import 'layout/site-header';
+ @import 'layout/site-main';
 
  @import 'component/form';
  @import 'component/browser-notice';

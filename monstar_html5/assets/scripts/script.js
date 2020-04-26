@@ -1,8 +1,8 @@
 // Monstar Template
 // Scalable and Maintainable Architecture.
 //
-// Author:   Monstar Lab Cebu
-// Website:  http://freemight.com/
+// Author:   JackRO & Monstar Lab Cebu
+// Website:  http://moonstar-template.ml/
 // URL:      https://github.com/jackryanoracoy/monstar-template
 // License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
 
@@ -30,6 +30,9 @@ window.onload = function(){
 }
 
 
+// // Object-Fit
+// $(function () { objectFitImages() });
+
 // Smooth scroll
 $(document).ready(function() {
   $('a[href^="#"]').on('click', function(event) {
@@ -42,11 +45,32 @@ $(document).ready(function() {
   });
 });
 
+// Immersive
+$(document).ready(function($) {
+  var lastScroll = 0;
+    $(window).scroll(function() {
+    setTimeout(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll > lastScroll + 10) {
+        $(".site-header").removeClass("js-show");
+      } else if (scroll < lastScroll - 10) {
+        $(".site-header").addClass("js-show");
+      }
+
+      if (scroll >= 100) {
+        $(".site-header").addClass("js-active");
+      } else {
+        $(".site-header").removeClass("js-active");
+      } lastScroll = scroll;
+    }, 300);
+  });
+});
+
 // Toggle class on click
 $(document).ready(function($) {
   $('.site-menu').click(function() {
     $('.site-menu').stop().toggleClass('js-active');
-    $('.site-header').stop().toggleClass('js-menu-opened');
+    // $('.site-header').stop().toggleClass('js-menu-opened');
     $('.site-header-navigation').stop().toggleClass('js-show');
   });
 });

@@ -1,8 +1,8 @@
 // Monstar Template
 // Scalable and Maintainable Architecture.
 //
-// Author:   Monstar Lab Cebu
-// Website:  http://freemight.com/
+// Author:   JackRO & Monstar Lab Cebu
+// Website:  https://monstar-template.ml
 // URL:      https://github.com/jackryanoracoy/monstar-template
 // License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
 
@@ -58,60 +58,24 @@
   &.is-alt-stretch { align-items: stretch; }
   &.is-alt-baseline { align-items: baseline; }
 
-  &-order-1 { order: 1; }
-  &-order-2 { order: 2; }
-  &-order-3 { order: 3; }
-  &-order-4 { order: 4; }
-  &-order-5 { order: 5; }
-  &-order-6 { order: 6; }
-  &-order-7 { order: 7; }
-  &-order-8 { order: 8; }
-  &-order-9 { order: 9; }
-  &-order-10 { order: 10; }
-  &-order-11 { order: 11; }
-  &-order-12 { order: 12; }
-
   // &-als-start { align-self: flex-start; }
   // &-als-end { align-self: flex-end; }
   // &-als-center { align-self: center; }
   // &-als-stretch { align-self: stretch; }
   // &-als-baseline { align-self: baseline; }
 
-  &-item { @include flex-col-width-auto(); }
-  &-item-1 { @include flex-col-width(1); }
-  &-item-2 { @include flex-col-width(2); }
-  &-item-3 { @include flex-col-width(3); }
-  &-item-4 { @include flex-col-width(4); }
-  &-item-5 { @include flex-col-width(5); }
-  &-item-6 { @include flex-col-width(6); }
-  &-item-7 { @include flex-col-width(7); }
-  &-item-8 { @include flex-col-width(8); }
-  &-item-9 { @include flex-col-width(9); }
-  &-item-10 { @include flex-col-width(10); }
-  &-item-11 { @include flex-col-width(11); }
-  &-item-12 { @include flex-col-width(12); }
+  @for $count from 1 through 12 {
+    &-order-#{$count} { order: #{$count}; }
+  }
 
-  &-item-a { @include flex-col-width-alt(1); }
-  &-item-b { @include flex-col-width-alt(2); }
-  &-item-c { @include flex-col-width-alt(3); }
-  &-item-d { @include flex-col-width-alt(4); }
-  &-item-e { @include flex-col-width-alt(6); }
-  &-item-f { @include flex-col-width-alt(7); }
-  &-item-g { @include flex-col-width-alt(8); }
-  &-item-h { @include flex-col-width-alt(9); }
+  @for $count from 1 through 12 {
+    &-item { @include flex-col-width-auto(); }
+    &-item-#{$count} { @include flex-col-width($count); }
+  }
 
-  // &-basis-1 { @include basis-col-width(1); }
-  // &-basis-2 { @include basis-col-width(2); }
-  // &-basis-3 { @include basis-col-width(3); }
-  // &-basis-4 { @include basis-col-width(4); }
-  // &-basis-5 { @include basis-col-width(5); }
-  // &-basis-6 { @include basis-col-width(6); }
-  // &-basis-7 { @include basis-col-width(7); }
-  // &-basis-8 { @include basis-col-width(8); }
-  // &-basis-9 { @include basis-col-width(9); }
-  // &-basis-10 { @include basis-col-width(10); }
-  // &-basis-11 { @include basis-col-width(11); }
-  // &-basis-12 { @include basis-col-width(12); }
+  @for $count from 1 through 12 {
+    &-basis-#{$count} { @include basis-col-width($count); }
+  }
 
   &-grow { flex-grow: 1; }
   &-grow-no { flex-grow: 0; }
@@ -164,60 +128,24 @@
       &.is-alt-stretch-#{$breakpoint} { align-items: stretch; }
       &.is-alt-baseline-#{$breakpoint} { align-items: baseline; }
 
-      &-order-#{$breakpoint}-1 { order: 1; }
-      &-order-#{$breakpoint}-2 { order: 2; }
-      &-order-#{$breakpoint}-3 { order: 3; }
-      &-order-#{$breakpoint}-4 { order: 4; }
-      &-order-#{$breakpoint}-5 { order: 5; }
-      &-order-#{$breakpoint}-6 { order: 6; }
-      &-order-#{$breakpoint}-7 { order: 7; }
-      &-order-#{$breakpoint}-8 { order: 8; }
-      &-order-#{$breakpoint}-9 { order: 9; }
-      &-order-#{$breakpoint}-10 { order: 10; }
-      &-order-#{$breakpoint}-11 { order: 11; }
-      &-order-#{$breakpoint}-12 { order: 12; }
-
       // &-als-start-#{$breakpoint} { align-self: flex-start; }
       // &-als-end-#{$breakpoint} { align-self: flex-end; }
       // &-als-center-#{$breakpoint} { align-self: center; }
       // &-als-stretch-#{$breakpoint} { align-self: stretch; }
       // &-als-baseline-#{$breakpoint} { align-self: baseline; }
 
-      &-item-#{$breakpoint} { @include flex-col-width-auto(); }
-      &-item-#{$breakpoint}-1 { @include flex-col-width(1); }
-      &-item-#{$breakpoint}-2 { @include flex-col-width(2); }
-      &-item-#{$breakpoint}-3 { @include flex-col-width(3); }
-      &-item-#{$breakpoint}-4 { @include flex-col-width(4); }
-      &-item-#{$breakpoint}-5 { @include flex-col-width(5); }
-      &-item-#{$breakpoint}-6 { @include flex-col-width(6); }
-      &-item-#{$breakpoint}-7 { @include flex-col-width(7); }
-      &-item-#{$breakpoint}-8 { @include flex-col-width(8); }
-      &-item-#{$breakpoint}-9 { @include flex-col-width(9); }
-      &-item-#{$breakpoint}-10 { @include flex-col-width(10); }
-      &-item-#{$breakpoint}-11 { @include flex-col-width(11); }
-      &-item-#{$breakpoint}-12 { @include flex-col-width(12); }
+      @for $count from 1 through 12 {
+        &-order-#{$breakpoint}-#{$count} { order: #{$count}; }
+      }
 
-      &-item-#{$breakpoint}-a { @include flex-col-width-alt(1); }
-      &-item-#{$breakpoint}-b { @include flex-col-width-alt(2); }
-      &-item-#{$breakpoint}-c { @include flex-col-width-alt(3); }
-      &-item-#{$breakpoint}-d { @include flex-col-width-alt(4); }
-      &-item-#{$breakpoint}-e { @include flex-col-width-alt(6); }
-      &-item-#{$breakpoint}-f { @include flex-col-width-alt(7); }
-      &-item-#{$breakpoint}-g { @include flex-col-width-alt(8); }
-      &-item-#{$breakpoint}-h { @include flex-col-width-alt(9); }
+      @for $count from 1 through 12 {
+        &-item-#{$breakpoint} { @include flex-col-width-auto(); }
+        &-item-#{$breakpoint}-#{$count} { @include flex-col-width($count); }
+      }
 
-      // &-basis-#{$breakpoint}-1 { @include basis-col-width(1); }
-      // &-basis-#{$breakpoint}-2 { @include basis-col-width(2); }
-      // &-basis-#{$breakpoint}-3 { @include basis-col-width(3); }
-      // &-basis-#{$breakpoint}-4 { @include basis-col-width(4); }
-      // &-basis-#{$breakpoint}-5 { @include basis-col-width(5); }
-      // &-basis-#{$breakpoint}-6 { @include basis-col-width(6); }
-      // &-basis-#{$breakpoint}-7 { @include basis-col-width(7); }
-      // &-basis-#{$breakpoint}-8 { @include basis-col-width(8); }
-      // &-basis-#{$breakpoint}-9 { @include basis-col-width(9); }
-      // &-basis-#{$breakpoint}-10 { @include basis-col-width(10); }
-      // &-basis-#{$breakpoint}-11 { @include basis-col-width(11); }
-      // &-basis-#{$breakpoint}-12 { @include basis-col-width(12); }
+      @for $count from 1 through 12 {
+        &-basis-#{$breakpoint}-#{$count} { @include basis-col-width($count); }
+      }
 
       &-grow-#{$breakpoint} { flex-grow: 1; }
       &-grow-no-#{$breakpoint} { flex-grow: 0; }
