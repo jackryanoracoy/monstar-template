@@ -1,0 +1,73 @@
+// Monstar Template
+// Scalable and Maintainable Architecture.
+//
+// Author:   JackRO & Monstar Lab Cebu
+// Website:  https://monstar-template.ml
+// URL:      https://github.com/jackryanoracoy/monstar-template
+// License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Site Header
+--------------------------------------------------*/
+
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 240px;
+  z-index: 9;
+
+  &.js-active {
+    top: -$header-height_m;
+    transition: $transition;
+  }
+
+  &.js-active.js-show,
+  &.js-menu-opened {
+    top: 0 !important;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &-content {
+    padding: 0 $section-gutter-hor;
+  }
+
+  &-navigation {
+    max-width: 100%;
+    max-height: 0;
+    transition: $transition;
+    overflow: hidden;
+  }
+
+  &-navigation.js-show { max-height: 100vh; }
+
+  @include media-breakpoint-min(lg) {
+    &.js-active {
+      top: -$header-height;
+    }
+
+    &-content:first-child {
+      height: $header-height;
+    }
+
+    &-branding {
+      width: auto;
+      max-width: 50%;
+    }
+
+    &-branding {
+      width: auto;
+    }
+
+    &-navigation {
+      max-height: 100vh;
+    }
+  }
+
+  @media print {
+    position: relative;
+    border-bottom: 1px solid $primary;
+
+    &-menu, &-navigation { display: none; }
+  }
+}

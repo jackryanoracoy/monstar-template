@@ -1,0 +1,17 @@
+/*!
+ * Name:        Monstar Template
+ * URI:         https://github.com/jackryanoracoy/monstar-template
+ * Author:      JackRO & Monstar Lab Cebu
+ * Author URI:  https://monstar-template.ml
+ * Description: A Scalable and Maintainable Template
+ * Version:     1.0.0
+ * License:     The MIT License
+ * License URI: https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+ */
+
+ $responsive: true;
+
+ @import 'setting/mixin';
+ @import 'setting/variable';
+ @import 'setting/font-face';
+ @import 'setting/root';

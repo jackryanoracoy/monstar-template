@@ -1,0 +1,31 @@
+// Monstar Template
+// Scalable and Maintainable Architecture.
+//
+// Author:   JackRO & Monstar Lab Cebu
+// Website:  https://monstar-template.ml
+// URL:      https://github.com/jackryanoracoy/monstar-template
+// License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Gap
+--------------------------------------------------*/
+
+@each $gap in '10' '20' '30' '40' '50' {
+  .gap-#{$gap} {
+    margin: (#{-#{$gap}px} / 2);
+
+    & > div,
+    & > .gap-item { padding: (#{#{$gap}px} / 2); }
+  }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-min($breakpoint) {
+      .gap-#{$breakpoint}-#{$gap} {
+        margin: (#{-#{$gap}px} / 2);
+
+        & > div,
+        & > .gap-item { padding: (#{#{$gap}px} / 2); }
+      }
+    }
+  }
+}

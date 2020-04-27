@@ -1,0 +1,19 @@
+// Monstar Template
+// Scalable and Maintainable Architecture.
+//
+// Author:   JackRO & Monstar Lab Cebu
+// Website:  https://monstar-template.ml
+// URL:      https://github.com/jackryanoracoy/monstar-template
+// License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------------------
+ Font Face
+--------------------------------------------------------------*/
+
+// Noto Sans
+@include font-face("Noto Sans", Noto-Sans, 400);
+@include font-face("Noto Sans", Noto-Sans-Bold, 700);
+
+// Open Sans Condensed
+// @include font-face("Open Sans Condensed", Open-Sans-Condensed-Light, 300);
+// @include font-face("Open Sans Condensed", Open-Sans-Condensed-Bold, 700);

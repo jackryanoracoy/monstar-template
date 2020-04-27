@@ -1,0 +1,23 @@
+// Monstar Template
+// Scalable and Maintainable Architecture.
+//
+// Author:   JackRO & Monstar Lab Cebu
+// Website:  https://monstar-template.ml
+// URL:      https://github.com/jackryanoracoy/monstar-template
+// License:  https://github.com/jackryanoracoy/monstar-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Links
+--------------------------------------------------*/
+
+a {
+  color: $info;
+  text-decoration: none;
+
+  &:hover, &:visited, &:active, &:focus {
+    text-decoration: underline;
+  }
+
+  @media print { &, &:visited { text-decoration: underline; } }
+}
+
