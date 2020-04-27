@@ -10,82 +10,22 @@
   Gap
 --------------------------------------------------*/
 
-.gap-10 {
-  margin: -5px;
+@each $gap in '10' '20' '30' '40' '50' {
+  .gap-#{$gap} {
+    margin: (#{-#{$gap}px} / 2);
 
-  & > div,
-  & > .gap-item { padding: 5px; }
-}
-.gap-20 {
-  margin: -10px;
+    & > div,
+    & > .gap-item { padding: (#{#{$gap}px} / 2); }
+  }
 
-  & > div,
-  & > .gap-item { padding: 10px; }
-}
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-min($breakpoint) {
+      .gap-#{$breakpoint}-#{$gap} {
+        margin: (#{-#{$gap}px} / 2);
 
-.gap-30 {
-  margin: -15px;
-
-  & > div,
-  & > .gap-item { padding: 15px; }
-}
-
-.gap-40 {
-  margin: -20px;
-
-  & > div,
-  & > .gap-item { padding: 20px; }
-}
-
-.gap-50 {
-  margin: -25px;
-
-  & > div,
-  & > .gap-item { padding: 25px; }
-}
-
-@each $breakpoint in map-keys($breakpoints) {
-  @include media-breakpoint-min($breakpoint) {
-    .gap-#{$breakpoint}-0 {
-      margin: 0;
-
-      & > div,
-      & > .gap-item { padding: 0; }
-    }
-
-    .gap-#{$breakpoint}-10 {
-      margin: -5px;
-
-      & > div,
-      & > .gap-item { padding: 5px; }
-    }
-
-    .gap-#{$breakpoint}-20 {
-      margin: -10px;
-
-      & > div,
-      & > .gap-item { padding: 10px; }
-    }
-
-    .gap-#{$breakpoint}-30 {
-      margin: -15px;
-
-      & > div,
-      & > .gap-item { padding: 15px; }
-    }
-
-    .gap-#{$breakpoint}-40 {
-      margin: -20px;
-
-      & > div,
-      & > .gap-item { padding: 20px; }
-    }
-
-    .gap-#{$breakpoint}-50 {
-      margin: -25px;
-
-      & > div,
-      & > .gap-item { padding: 25px; }
+        & > div,
+        & > .gap-item { padding: (#{#{$gap}px} / 2); }
+      }
     }
   }
 }

@@ -204,7 +204,7 @@ Here are some sample of what to expect on this template, For more info please ch
   
 #### Button:
 ```
-<a class="btn" href="#">Button</a>
+<a class="button" href="#">Button</a>
 ```
   
 #### Hidden:
@@ -272,14 +272,14 @@ Here are some sample of what to expect on this template, For more info please ch
   
 #### Padding:
 ```
-<div class="pab-10 pab-sm-20">
+<div class="pb-10 pb-sm-20">
   <!-- Add padding (10px padding on 575px below, 20px padding on 576 and above) -->
 </div>
 ```
   
 #### Margin:
 ```
-<div class="mab-10 mab-sm-20">
+<div class="mb-10 mb-sm-20">
   <!-- Add margin (10px margin on 575px below, 20px margin on 576 and above) -->
 </div>
 ```

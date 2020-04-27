@@ -40,13 +40,3 @@
     font-size: $font-lg;
   }
 }
-
-.heading-widget {
-  color: $grey-700;
-  font-size: $font-lg;
-  letter-spacing: 0.2rem;
-
-  @include media-breakpoint-min(lg) {
-    font-size: $font-xl;
-  }
-}
