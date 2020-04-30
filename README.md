@@ -470,10 +470,7 @@ Some great works that are included in this template.
 * [EditorConfig](https://editorconfig.org)  
   
   
-## Author  
-  
-Jack Ryan Oracoy  
-[https://jackryanoracoy.github.io/](https://jackryanoracoy.github.io/)  
+## Author   
   
 Monstar Lab Cebu  
 [http://freemight.com/](http://freemight.com/)  
