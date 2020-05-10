@@ -116,8 +116,18 @@ $container-lg:          960px                 !default;
 $container-xl:          1140px                !default;
 
 // Column Count
-$column-count:           12                   !default;
-$column-count-alt:       10                   !default;
+$column-count:          12                    !default;
+$column-count-alt:      10                    !default;
+
+// Margin and Padding
+$gap:
+                        0,
+                        5,
+                        10,
+                        20,
+                        30,
+                        40,
+                        50,                   !default;
 
 // Font Size
 $font-sm:               1.2rem                !default;
