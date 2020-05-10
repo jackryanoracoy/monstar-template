@@ -68,8 +68,9 @@
     &-order-#{$count} { order: #{$count}; }
   }
 
+  &-item { @include flex-col-width-auto(); }
+
   @for $count from 1 through 12 {
-    &-item { @include flex-col-width-auto(); }
     &-item-#{$count} { @include flex-col-width($count); }
   }
 
@@ -138,8 +139,9 @@
         &-order-#{$breakpoint}-#{$count} { order: #{$count}; }
       }
 
+      &-item-#{$breakpoint} { @include flex-col-width-auto(); }
+
       @for $count from 1 through 12 {
-        &-item-#{$breakpoint} { @include flex-col-width-auto(); }
         &-item-#{$breakpoint}-#{$count} { @include flex-col-width($count); }
       }
 

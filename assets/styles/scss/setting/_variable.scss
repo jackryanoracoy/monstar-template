@@ -116,8 +116,18 @@ $container-lg:          960px                 !default;
 $container-xl:          1140px                !default;
 
 // Column Count
-$column-count:           12                   !default;
-$column-count-alt:       10                   !default;
+$column-count:          12                    !default;
+$column-count-alt:      10                    !default;
+
+// Margin and Padding
+$gap:
+                        0,
+                        5,
+                        10,
+                        20,
+                        30,
+                        40,
+                        50,                   !default;
 
 // Font Size
 $font-sm:               1.2rem                !default;
@@ -141,8 +151,8 @@ $header-height_m:       60px                  !default;
 $nav-height:            50px                  !default;
 
 // Button Height
-$button-height:         40px                  !default;
-$button-height-lg:      50px                  !default;
+$button-height:         50px                  !default;
+$button-height-lg:      60px                  !default;
 
 // Input Height
 $input-height:          50px                  !default;

@@ -10,14 +10,16 @@
   Margin
 --------------------------------------------------*/
 
-@each $margin in '0' '5' '10' '20' '30' '40' '50' {
+@each $margin in $gap {
   .mt-#{$margin} { margin-top: #{#{$margin}px}; }
   .mr-#{$margin} { margin-right: #{#{$margin}px}; }
   .mb-#{$margin} { margin-bottom: #{#{$margin}px}; }
   .ml-#{$margin} { margin-left: #{#{$margin}px}; }
+}
 
-  @each $breakpoint in map-keys($breakpoints) {
-    @include media-breakpoint-min($breakpoint) {
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+    @each $margin in $gap {
       .mt-#{$breakpoint}-#{$margin} { margin-top: #{#{$margin}px}; }
       .mr-#{$breakpoint}-#{$margin} { margin-right: #{#{$margin}px}; }
       .mb-#{$breakpoint}-#{$margin} { margin-bottom: #{#{$margin}px}; }
