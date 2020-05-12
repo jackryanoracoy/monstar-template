@@ -236,7 +236,7 @@
 
               <p class="flex is-wrp-no font-small highlight is-grey-200 color-dark mt-20">
               <span>NOTE:&emsp;</span>
-              <span>To extend Moonshine's accessibility please see <a href="https://www.w3.org/WAI/standards-guidelines/aria/">WAI-ARIA</a>,
+              <span>To extend accessibility please see <a href="https://www.w3.org/WAI/standards-guidelines/aria/">WAI-ARIA</a>,
               <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a> and similar accessibility standards and requirements.</span></p>
 
             </article><!-- End - article -->
@@ -301,6 +301,7 @@
               <p class="mb-20">For separate codebase (default), CSS should be in the same order as below:</p>
 
               <ul class="list mb-20">
+                <li><a href="https://github.com/jackryanoracoy/monstar-template/blob/master/source/css/setting.css">setting.css</a> - This contains custom properties (css variables), font-face, etc.</li>
                 <li><a href="https://github.com/jackryanoracoy/monstar-template/blob/master/source/css/base.css">base.css</a> - Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.</li>
                 <li><a href="https://github.com/jackryanoracoy/monstar-template/blob/master/source/css/layout.css">layout.css</a> - Class-based selectors which define undecorated design patterns, for example media object known from OOCSS.</li>
                 <li><a href="https://github.com/jackryanoracoy/monstar-template/blob/master/source/css/component.css">component.css</a> - Specific UI components. This is where the majority of our work takes place and our UI components are often composed of Objects and Components.</li>
@@ -311,6 +312,43 @@
               <span>NOTE:&emsp;</span>
               <span>You can start your project from here, but if you want more controll or want to change the CSS naming convention,
               locate the "source" folder and edit source SASS files according to your preference.</span></p>
+
+            </article><!-- End - article -->
+
+            <article class="article">
+
+              <h3 class="heading-article mb-20">Methodology</h3>
+
+              <p>Organize project files that can better deal with CSS specifics like global namespace, cascade and selectors specificity.
+              <br>This approach is to ensure everyone who participates in the development of a website works with a single codebase and speaks the same language. See popular methodology below for guidlines.</p>
+
+              <div class="mt-20">
+                <h4 class="mb-10">SMACSS - Scalable and Modular Architecture for CSS</h4>
+                <p class="mb-10">SMACSS is a way to examine your design process and as a way to fit those rigid frameworks into a flexible thought process. It is an attempt to document a consistent approach to site development when using CSS.</p>
+                <a href="http://smacss.com/" target="_blank">Read the full documentation of SMACSS</a>
+              </div>
+
+              <div class="mt-20">
+                <h4 class="mb-10">BEM - Block Element Modifier</h4>
+                <p class="mb-10">Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development.</p>
+                <a href="http://getbem.com/introduction/" target="_blank">Read the full documentation of BEM</a>
+              </div>
+
+              <div class="mt-20">
+                <h4 class="mb-10">ITCSS - Inverted Triangle CSS</h4>
+                <p class="mb-10">ITCSS stands for Inverted Triangle CSS and it helps you to organize your project CSS files in such a way that you can better deal with (not always easy-to-deal with) CSS specifics like global namespace, cascade and selectors specificity.</p>
+                <p class="color-danger">No official documentation for ITCSS yet</p>
+              </div>
+
+              <div class="mt-20">
+                <h4 class="mb-10">OOCSS - Object Oriented CSS</h4>
+                <p class="mb-10">As with any object-based coding method, the purpose of OOCSS is to encourage code reuse and, ultimately, faster and more efficient stylesheets that are easier to add to and maintain.</p>
+                <a href="https://github.com/stubbornella/oocss/wiki" target="_blank">Read the full documentation of OCSS</a>
+              </div>
+
+              <p class="flex is-wrp-no font-small highlight is-grey-200 color-dark mt-20">
+              <span>NOTE:&emsp;</span>
+              <span>This template shares the same methodology of some popular methodologies like ITCSS, BEM, SMACSS and OOCSS.</span></p>
 
             </article><!-- End - article -->
 
